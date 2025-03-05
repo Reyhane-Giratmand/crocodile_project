@@ -1,43 +1,65 @@
-const body = document.querySelector("body"),
-      nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle"),
-      sidebarOpen = document.querySelector(".sidebarOpen"),
-      siderbarClose = document.querySelector(".siderbarClose");
+// dark and ligh mode
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('theme-switch')
 
-      let getmode = localStorage.getItem("mode");
-        if(getmode && getmode === "dark-mode"){
-          body.classList.add("dark");
-        }
-      
-//dark and light mode
-      modeToggle.addEventListener("click" , () => {
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode')
+  localStorage.setItem('darkmode', 'active')
+}
 
-//js code to keep user selected mode even page refresh of file reopen
-        if(!body.classList.contains("dark")){
-          localStorage.setItem("mode" , "light-mode");
-        }else{
-          localStorage.setItem("mode" , "dark-mode");
-        }
-      });
- 
- //js code to toggle search box
-       searchToggle.addEventListener("click" , () =>{
-       searchToggle.classList.toggle("active");
-      });
-      //js code to toggle siderber
-      sidebarOpen.addEventListener("click" , () =>{
-        nav.classList.add("active");
-      });
+const diableDarkmode = () => {
+  document.body.classList.remove('darkmode')
+  localStorage.setItem('darkmode', null)
+}
 
-      body.addEventListener("click" , e =>{
-        let clickedElm = e.target;
+if(darkmode === "active") enableDarkmode()
 
-        if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-          nav.classList.remove("active");
-        }
-      });
+themeSwitch.addEventListener("click", () => {
+  darkmode = localStorage.getItem('darkmode')
+  darkmode !== "active" ? enableDarkmode() : diableDarkmode() 
+})
 
-    
+
+// sidebar 
+const openButton = document.getElementById('open-sidebar-button')
+const navbar = document.getElementById('navbar')
+
+const media = window.matchMedia("(width < 700px)")
+
+media.addEventListener('change', (e) => updateNavbar(e))
+
+function updateNavbar(e){
+  const isMobile = e.matches
+  console.log(isMobile)
+  if(isMobile){
+    navbar.setAttribute('insert','')
+  }
+  else{
+    // desktop device
+    navbar.removeAttribute('inert')
+  }
+}
+
+function openSidebar(){
+  navbar.classList.add('show')
+  openButton.setAttribute('aria-expanded','true')
+}
+function closeSidebar(){
+  navbar.classList.remove('show')
+  openButton.setAttribute('aria-expanded','false')
+  navbar.removeAttribute('inert','')
+}
+const navlinks = document.querySelectorAll('nav a')
+navlinks.forEach(link => {
+  link.addEventListener('click', () =>{
+    closeSidebar()
+  })
+})
+openSidebar(media)
+
+
+searchToggle = document.querySelector(".searchToggle")
+//js code to toggle search box
+      searchToggle.addEventListener("click" , () =>{
+      searchToggle.classList.toggle("active");
+     });

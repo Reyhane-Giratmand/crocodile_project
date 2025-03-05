@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بومرنگ</title>
-    <link rel="stylesheet" href="Css/Style.css">
-    <link rel="stylesheet" href="../crocodile_project/Assets/font.css">
 
-            <!-- font awecome cdn for slider -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css and font -->
+        <link rel="stylesheet" href="Css/Style.css">
+        <link rel="stylesheet" href="../crocodile_project/Assets/font.css">
+
+        <!-- font awecome cdn for slider -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
         <!-- font awecome cdn for butten-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- javascript link -->
+        <script type="text/javascript" src="Jave script/app.js" defer></script>
+
 </head>
 <body>
-    <div class="content">
-    <header class="header">
+<!-- section header starts -->
+    <section>
+    <header>
         <div class="container">
-            <!-- لوگو -->
+            
+            <!-- button bar for recposive -->
+            <button id="open-sidebar-button" onclick="openSidebar()">
+                <i class='bx bx-menu sidebarOpen'></i>
+                </button>
+
+            <!--name and image logo-->
             <div class="logo">
                 <div class="brand">
                     <span class="image"><img src="Assets/Image/boomrang_logo.svg" alt=""></span>
@@ -27,31 +40,58 @@
                 </div>
             </div>
 
-            <!-- منو -->
-            <nav class="nav">
+            <!-- items in navbar -->
+            <nav class="nav show color-side" id="navbar" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
                 <ul>
-                    <li><a href="#">صفحه اصلی</a></li>
-                    <li><a href="#">وبلاگ</a></li>
-                    <li><a href="#">درباره ما</a></li>
-                    <li><a href="#">تماس با ما</a></li>
+                    <li><button  id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><i class='bx bx-x siderbarClose'></i></button></li>
+                    <li class="home-li li-hover"><a href="#index.html" aria-current="page">صفحه اصلی</a></li>
+                    <li class="li-hover"><a href="#blog.html">وبلاگ</a></li>
+                    <li class="li-hover"><a href="#about.html">درباره ما</a></li>
+                    <li class="li-hover"><a href="#call.html">تماس با ما</a></li>
                 </ul>
             </nav>
+            <!--rgba color for sidebar-->
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
-            <!-- نوار جستجو -->
+            <!--box searchbar-->
             <div class="search-bar">
                 <input type="text" placeholder="جستجو کنید...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-
-            <!-- آیکون‌ها -->
-            <div class="icons">
-                <i class='bx bx-moon moon' ></i> <!-- حالت شب -->
-                <i class="bx bx-user-circle" ></i><!-- حساب کاربری -->
-                <i class="bx bx-cart-alt"></i><!-- سبد خرید -->
-                
-            </div>
+            <!-- **************************** -->
+                <!--searchBox-->
+    <div class="searchBox">
+        <div class="searchToggle">
+            <i class='bx bx-x cancle'></i>
+            <i class='bx bxs-search search'></i>
         </div>
+             <!--search field-->
+            <div class="search-field">
+                <input class="text" placeholder="جستجو..." autocomplete="on">
+                <i class='bx bxs-search'></i>
+            </div>
+            </div>
+            <!-- **************************** -->
+
+            <!--icons for mode and shopping and login-->
+            <div class="icons">
+                <div class="box-icon">
+                    <div class="dark-light" id="theme-switch">
+                    <div class="box-mode"> <i class="bx bxs-moon"></i></div>                      <!--icon dark-mode-->
+                    <div class="box-mode"> <i class="bx bxs-sun"></i></div>                       <!--icon light-mode-->
+                    </div>
+
+                    <a href=""><div class="box"><i class="bx bxs-user"></i></div></a>             <!--icon login-->
+                    <a href=""><div class="box"><i class="bx bxs-shopping-bag" ></i></div></a>    <!--icon shoping bag-->
+            </div>
+            </div>
     </header>
-</div>
+</section>
+<!-- section header ends -->
+
+    <!--link javascript -->
+    <script src="Jave script/app.js"></script>
+
+
 </body>
 </html>
