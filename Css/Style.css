@@ -8,7 +8,6 @@
     --hover-color:#970747;
     --shadow-color: 0 0 15px #d7d4d4, 0 0 15px #d7d4d4;
 }
-
 .darkmode{
     --body-color: #1f1f1f;
     --nav-color: rgb(21, 21, 20);
@@ -52,8 +51,10 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--nav-color);
+    box-shadow: var(--shadow-color);
+    z-index: 1000;
+    width: 100%;
     border-bottom: 1px solid var(--nav-color);
-    box-shadow:var(--shadow-color);
     z-index: 1000;
     height: 100px;
     display: flex;
@@ -95,8 +96,9 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color:var(--search-bar) ;
     padding: 10px 10px;
+    background-color: var(--search-bar);
+    padding: 5px 20px;
     border-radius: 10px;
 }
 
@@ -104,7 +106,7 @@ header {
     border: none;
     outline: none;
     background: none;
-    padding: 5px;
+    padding: 11px;
     width: 300px;
     color: var(--text-color);
 }
