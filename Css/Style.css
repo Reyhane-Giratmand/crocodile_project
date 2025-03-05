@@ -3,10 +3,10 @@
     --nav-color: #FBFBFB;
     --side-nav: #a6c5d3;
     --text-color: #13445A;
-    --search-bar: #e1e1e1;
+    --search-bar: #F5F5F5;
     --search-text: #212121;
     --hover-color:#970747;
-    --shadow-color: 0 0 15px #d7d4d4, 0 0 15px #d7d4d4;
+    --shadow-color: 0 0 15px #F5F5F5, 0 0 15px #F5F5F5;
 }
 .darkmode{
     --body-color: #1f1f1f;
@@ -30,8 +30,8 @@ body {
 
 .brand {
     position: relative;
-    right: -30px;
-    gap: 10px;
+    right: -90px;
+    gap: 11px;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ header {
 
 .logo img {
     height: 40px;
-    margin-right: 22px;
+    margin-right: 20px;
 }
 
 .nav ul {
@@ -81,10 +81,11 @@ header {
     display: flex;
     padding: 0;
     margin: 0;
+
 }
 
 .nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .nav ul li a {
@@ -94,6 +95,7 @@ header {
 }
 
 .search-bar {
+    margin-right: 95px;
     display: flex;
     align-items: center;
     padding: 10px 10px;
@@ -123,10 +125,10 @@ header {
 } 
 .icons .box-icon{
     display: flex;
-    gap: 25px;
+    gap: 10px;
     font-size: 27px;
     color:var(--text-color);
-    margin-right: 25px;
+    margin-right: 55px;
 }
 #theme-switch{
     height: 28px;
@@ -245,7 +247,7 @@ header {
         width: 100%;
         flex-direction: column;
         display: flex;
-        gap: 30px;
+        gap: 25px;
     }
     nav a{
         width: 100%;
