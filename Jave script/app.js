@@ -32,7 +32,7 @@ function updateNavbar(e){
   const isMobile = e.matches
   console.log(isMobile)
   if(isMobile){
-    navbar.setAttribute('insert','')
+    navbar.setAttribute('insert','true')
   }
   else{
     // desktop device
@@ -43,11 +43,12 @@ function updateNavbar(e){
 function openSidebar(){
   navbar.classList.add('show')
   openButton.setAttribute('aria-expanded','true')
+  navbar.removeAttribute('inert');
 }
 function closeSidebar(){
   navbar.classList.remove('show')
   openButton.setAttribute('aria-expanded','false')
-  navbar.removeAttribute('inert','')
+  navbar.removeAttribute('inert','true')
 }
 const navlinks = document.querySelectorAll('nav a')
 navlinks.forEach(link => {
@@ -55,11 +56,16 @@ navlinks.forEach(link => {
     closeSidebar()
   })
 })
-openSidebar(media)
-
 
 searchToggle = document.querySelector(".searchToggle")
 //js code to toggle search box
       searchToggle.addEventListener("click" , () =>{
       searchToggle.classList.toggle("active");
      });
+
+    // aos animation
+     AOS.init({
+      duration:800,
+      offset:150,
+
+  });
