@@ -1,12 +1,13 @@
+
 :root {
     --body-color: #FBFBFB;
     --nav-color: #FBFBFB;
     --side-nav: #a6c5d3;
     --text-color: #13445A;
-    --search-bar: #F5F5F5;
+    --search-bar: #e1e1e1;
     --search-text: #212121;
     --hover-color:#970747;
-    --shadow-color: 0 0 15px #F5F5F5, 0 0 15px #F5F5F5;
+    --shadow-color: 0 0 15px #d7d4d4, 0 0 15px #d7d4d4;
 }
 .darkmode{
     --body-color: #1f1f1f;
@@ -30,8 +31,8 @@ body {
 
 .brand {
     position: relative;
-    right: -90px;
-    gap: 12px;
+    right: -30px;
+    gap: 10px;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -73,7 +74,7 @@ header {
 
 .logo img {
     height: 40px;
-    margin-right: 20px;
+    margin-right: 22px;
 }
 
 .nav ul {
@@ -81,22 +82,19 @@ header {
     display: flex;
     padding: 0;
     margin: 0;
-
 }
 
 .nav ul li {
-    margin: 0 9px;
+    margin: 0 15px;
 }
 
 .nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 16px;
-  
 }
 
 .search-bar {
-    margin-right: 95px;
     display: flex;
     align-items: center;
     padding: 10px 10px;
@@ -126,10 +124,10 @@ header {
 } 
 .icons .box-icon{
     display: flex;
-    gap: 10px;
+    gap: 11px;
     font-size: 27px;
     color:var(--text-color);
-    margin-right: 55px;
+    margin-right: 25px;
 }
 #theme-switch{
     height: 28px;
@@ -174,6 +172,10 @@ header {
     color: var(--hover-color);
     transition: color 0.3s ease;
 }
+.searchBox i:hover {
+    color: var(--hover-color);
+    transition: color 0.3s ease;
+}
 .nav ul a:hover {
     color: var(--hover-color);
     transition: color 0.3s ease;
@@ -211,10 +213,9 @@ header {
 .searchBox, .search-null{
     display: none;
 }
-
 .main-content {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 172px 0px 50px; 
@@ -231,14 +232,13 @@ header {
 
 .text-content h1 {
     font-size: 40px;
-    color: #333;
+    color: var(--search-text);
     margin-bottom: 20px;
 }
 
 .text-content p {
     text-align: justify;
     font-size: 18px;
-    font-weight: 400;
     color: #666;
     margin-bottom: 20px;
 }
@@ -259,7 +259,7 @@ header {
 }
 
 .book-exchange-btn:hover {
-    background-color: #780c28;
+    background-color: #0056b3;
 }
 
 .image-placeholder {
@@ -280,7 +280,13 @@ header {
 }
 
 
-/* recposive mode */
+
+
+
+
+
+
+    /* recposive mode | max-width : 1220px*/
 
 @media screen and (max-width:1220px){
     #open-sidebar-button,#close-sidebar-button{
@@ -309,7 +315,7 @@ header {
         width: 100%;
         flex-direction: column;
         display: flex;
-        gap: 25px;
+        gap: 30px;
     }
     nav a{
         width: 100%;
@@ -322,8 +328,13 @@ header {
         border-radius: 10px;
         padding: 5px;
     }
-    
-    /* recposive search box */
+
+
+
+
+
+
+    /* recposive search box | max-width : 1220px*/
     @media screen and (max-width:1220px){
         .search-bar{
             display: none;
@@ -331,6 +342,7 @@ header {
         .searchBox{
             display: flex;
             align-items: center;
+            margin-left: -10px;
         }
         .searchToggle{
             height: 40px;
@@ -338,12 +350,11 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 5px;
         }
         .searchToggle i{
             position: absolute;
             color: var(--text-color);
-            font-size: 27px;
+            font-size: 28px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -367,10 +378,10 @@ header {
             bottom: -85px;
             left: 5px;
             height: 50px;
-            width: 250px;
+            width: 230px;
             display: flex;
             align-items: center;
-            background-color: var(--nav-color);
+            background-color: var(--search-bar);
             padding: 3px;
             border-radius: 6px;
             box-shadow:0 5px 5px rgba(0, 0, 0, 0.1);
@@ -390,7 +401,7 @@ header {
             top: -4px;
             height: 12px;
             width: 12px;
-            background-color: var(--nav-color);
+            background-color: var(--search-bar);
             transform: rotate(-45deg);
             z-index: -1;
         }
@@ -414,6 +425,7 @@ header {
         }
         .search-field i{
             position: absolute;
+            background: none;
             color: var(--text-color);
             left: 15px;
             font-size: 22px;
@@ -424,22 +436,84 @@ header {
         }
     }
 
+
+
+    /* recposive search box | max-width : 560px*/
+
+    @media screen and (max-width:560px){
+        html{
+            font-size: 55%;
+        }
+        .header{
+            padding:1.5rem 2rem;
+        }
+        .brand img{
+            width:40px;
+            margin-right: 4px;
+
+        }
+        section{
+            padding: 3rem 2rem; 
+         }
+         .icons .box-icon{
+            display: flex;
+            gap: 2px;
+            font-size: 15px;
+            color:var(--text-color);
+            margin-right: -10px;
+        }
+        .searchToggle i{
+            font-size: 15px;
+        }
+        .box i ,.searchBox i{
+            display: inline-block;
+            padding: 10px;
+            background-color: var(--search-bar);
+            border-radius: 10px;
+        }
+        #theme-switch{
+            height: 15px;
+            padding: 10px;
+            background-color: var(--search-bar);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchBox .search-field{
+            width: 180px;
+            height: 30px;
+        }
+        .searchToggle i{
+            margin-right: -40px;
+            font-size: 15px;
+        }
+        #open-sidebar-button {
+            margin-left: auto;
+            font-size: 28px;
+            margin-right: -35px;
+
+        }
+        .search-field i{
+            background: none;
+            font-size: 15px;
+        }
+        .searchToggle.active ~ .search-field{
+            bottom: -50px;
+            opacity:1;
+            pointer-events: auto;
+        }
+        .search-field::before{
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: -4px;
+            height: 12px;
+            width: 12px;
+            background-color: var(--search-bar);
+            transform: rotate(-45deg);
+            z-index: -1;
+        }
+    }
+
 }
-  /* recposive main section */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 150px 20px 50px;
-    }
-
-    .text-content {
-        max-width: 100%;
-    }
-
-    .image-placeholder {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
