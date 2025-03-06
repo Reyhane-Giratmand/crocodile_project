@@ -85,7 +85,7 @@ header {
 }
 
 .nav ul li {
-    margin: 0 10px;
+    margin: 0 9px;
 }
 
 .nav ul li a {
@@ -214,7 +214,7 @@ header {
 
 .main-content {
     display: flex;
-    flex-direction: row; /* متن راست و تصویر چپ */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
     padding: 172px 0px 50px; 
@@ -238,6 +238,7 @@ header {
 .text-content p {
     text-align: justify;
     font-size: 18px;
+    font-weight: 400;
     color: #666;
     margin-bottom: 20px;
 }
@@ -258,10 +259,9 @@ header {
 }
 
 .book-exchange-btn:hover {
-    background-color: #0056b3;
+    background-color: #780c28;
 }
 
-/* استایل بخش تصویر */
 .image-placeholder {
     flex: 1;
     max-width: 500px;
@@ -278,31 +278,6 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
-
-/* استایل ریسپانسیو برای موبایل */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 150px 20px 50px;
-    }
-
-    .text-content {
-        max-width: 100%;
-    }
-
-    .image-placeholder {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-
-
-
-
-
-
 
 
 /* recposive mode */
@@ -348,10 +323,6 @@ header {
         padding: 5px;
     }
     
-
-
-
-
     /* recposive search box */
     @media screen and (max-width:1220px){
         .search-bar{
@@ -454,3 +425,21 @@ header {
     }
 
 }
+  /* recposive main section */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 20px 50px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-placeholder {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
