@@ -279,6 +279,68 @@ header {
     border-radius: 10px;
 }
 
+.weblog-cards-holder{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.weblog-card{
+    width: 240px;
+    height: 374px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: solid 1px rgba(68, 104, 120, 1);
+}
+
+.weblog-card-image{
+    display: flex;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.weblog-card-detail{
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.weblog-card hr{
+    width: 88%;
+    height: 1px;
+    border: none;
+    background-color: rgba(68, 104, 120, 1);
+}
+
+.weblog-card-label{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    color: rgba(245, 245, 245, 1);
+    background-color: rgba(22, 69, 91, 1);
+    border-radius: 5px;
+    padding: 5px 5px 5px;
+}
+
+.weblog-card-view{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(68, 104, 120, 1);
+}
+
+.weblog-card-detail i{
+    margin-left: 10px;
+}
+
+
+
+
+
 /* استایل ریسپانسیو برای موبایل */
 @media (max-width: 768px) {
     .main-content {
