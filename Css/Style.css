@@ -303,12 +303,13 @@ header {
 
 .weblog-card-image{
     display: flex;
-    background-color: #F5F5F5;
+    background-color: #fff;
     width: 100%;
     height: 60%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .weblog-card-detail{
@@ -365,6 +366,33 @@ header {
         max-width: 100%;
         height: auto;
     }
+    /* weblog card recponsive */
+    .weblog-card{
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+    .weblog-card a{
+        width: 100%;
+    }
+    .weblog-card-image{
+        float: right;
+        width: 30%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+    .weblog-card-detail{
+        float: left;
+        width: 65%;
+        height: 100%;
+    }
+    .weblog-card-detail p, .weblog-card-label{
+        margin: 0 0 15px;
+        float: right;
+    }
+    .weblog-card-label{
+        float: left;
+    }
 }
 
 
@@ -375,7 +403,7 @@ header {
 
 
 
-/* recposive mode */
+/* responsive mode */
 
 @media screen and (max-width:1220px){
     #open-sidebar-button,#close-sidebar-button{
@@ -422,7 +450,7 @@ header {
 
 
 
-    /* recposive search box */
+    /* responsive search box */
     @media screen and (max-width:1220px){
         .search-bar{
             display: none;
