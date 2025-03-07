@@ -279,13 +279,16 @@ header {
     border-radius: 10px;
 }
 
+/* weblog section */
 .weblog-cards-holder{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 70%;
 }
 
 .weblog-card{
+    margin: 20px 20px;
     width: 240px;
     height: 374px;
     background-color: #F5F5F5;
