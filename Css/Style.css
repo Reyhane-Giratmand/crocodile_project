@@ -284,26 +284,26 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
 }
 
 .weblog-card{
     margin: 20px 20px;
     width: 240px;
     height: 374px;
-    background-color: #F5F5F5;
+    background-color: var(--nav-color);
     border-radius: 10px;
-    border: solid 1px rgba(68, 104, 120, 1);
+    border: solid 1px var(--text-color);
 }
 
 .weblog-card a{
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
 }
 
 .weblog-card-image{
     display: flex;
-    background-color: #fff;
+    background-color: var(--search-bar);
     width: 100%;
     height: 60%;
     border-radius: 10px 10px 0 0;
@@ -322,15 +322,15 @@ header {
     width: 88%;
     height: 1px;
     border: none;
-    background-color: rgba(68, 104, 120, 1);
+    background-color: var(--text-color);
 }
 
 .weblog-card-label{
     width: 70px;
     height: 25px;
     text-align: center;
-    color: rgba(245, 245, 245, 1);
-    background-color: rgba(22, 69, 91, 1);
+    color: var(--search-bar);
+    background-color: var(--text-color);
     border-radius: 5px;
     padding: 5px 5px 5px;
 }
@@ -339,11 +339,15 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    color: rgba(68, 104, 120, 1);
+    color: var(--text-color);
 }
 
 .weblog-card-detail i{
     margin-left: 10px;
+}
+
+.weblog-card-detail p{
+    color: var(--text-color);
 }
 
 
@@ -392,6 +396,9 @@ header {
     }
     .weblog-card-label{
         float: left;
+        font-size: 15px;
+        width: 55px;
+        height: 20px;
     }
 }
 
