@@ -117,7 +117,7 @@ header {
     border: none;
     outline: none;
     background: none;
-    padding: 11px;
+    padding: 7px;
     width: 250px;
     color: var(--text-color);
 }
@@ -127,6 +127,9 @@ header {
     background: none;
     cursor: pointer;
     color: var(--text-color);
+}
+input[placeholder]{
+    font-family: kalameh;
 }
 
 .search-bar input:hover {
@@ -265,7 +268,7 @@ header {
     padding: 14px 14px 14px;
     font-family: kalameh;
     background-color: #971B49;
-    color: #9795;
+    color: #FBFBFB;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -277,7 +280,7 @@ header {
 }
 
 .book-exchange-btn:hover {
-    background-color: #13445A;
+    background-color: #780c28;
 
 }
 
@@ -287,12 +290,16 @@ header {
     height: 300px;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 70px;
+    padding: 10px;
     align-items: center;
 }
 
-.image-placeholder img {
+.image-placeholder img{
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+
 }

@@ -1,4 +1,4 @@
-/* recposive mode | max-width : 1220px*/
+/* recposive mode | max-width : 1200px*/
 
 @media screen and (max-width:1200px){
     #open-sidebar-button, #close-sidebar-button{
@@ -69,7 +69,7 @@
 
 
 
-    /* recposive search box | max-width : 1220px*/
+    /* recposive search box | max-width : 1200px*/
     @media screen and (max-width:1200px){
         .search-bar{
             display: none;
@@ -173,7 +173,7 @@
 
 
 
-    /* recposive search box | max-width : 560px*/
+    /* recposive search box | max-width : 576px*/
 
     @media screen and (max-width:576px){
         html{
@@ -268,9 +268,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 350px;
         height: auto;
-        top: 300px;
+        top: 200px;
     }
 
 }
