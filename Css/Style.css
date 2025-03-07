@@ -9,6 +9,7 @@
     --hover-color:#970747;
     --txt-color:#212121;
     --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
+    --p-color:#666;
 }
 .darkmode{
     --body-color: #1f1f1f;
@@ -20,6 +21,7 @@
     --hover-color:#6a5760;
     --txt-color:#FBFBFB;
     --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
+    --p-color:#dbdbdb;
 }
 
 body {
@@ -71,7 +73,6 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
 }
 .logo{
     margin-right: -80px;
@@ -138,6 +139,10 @@ header {
     color:var(--text-color);
     margin-right: 25px;
 }
+.dark-light i{
+    position: relative;
+    bottom: -1px;
+}
 #theme-switch{
     height: 28px;
     padding: 10px;
@@ -193,7 +198,7 @@ header {
     background: none;
     border: none;
     padding: 1em;
-    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     color: var(--text-color);
     font-size: 28px;
@@ -249,7 +254,7 @@ header {
 .text-content p {
     text-align: justify;
     font-size: 18px;
-    color: #666;
+    color: var(--p-color);
     margin-bottom: 20px;
 }
 
@@ -260,7 +265,7 @@ header {
     padding: 14px 14px 14px;
     font-family: kalameh;
     background-color: #971B49;
-    color: #fff;
+    color: #9795;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -273,7 +278,7 @@ header {
 
 .book-exchange-btn:hover {
     background-color: #13445A;
-    box-shadow:0px 0px 10px #5b5a5a;
+
 }
 
 .image-placeholder {
@@ -290,287 +295,4 @@ header {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-}
-
-
-
-
-
-
-
-/* recposive mode | max-width : 1220px*/
-
-@media screen and (max-width:1220px){
-    #open-sidebar-button, #close-sidebar-button{
-        display: block;
-    }
-
-    nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: min(15rem, 100%);
-        z-index: 1000;
-        border-left: 1px solid var(--side-nav);
-        background-color: var(--side-nav);
-        transition: right 300ms ease-out;
-    }
-    nav.show{
-        right: 0;
-    }
-
-    nav.show ~ #overlay{
-        display: block;
-    }
-    nav ul{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        gap: 30px;
-    }
-    nav a{
-        width: 100%;
-    }
-    nav .home-li{
-        margin-right: unset;
-    }   
-    nav .li-hover:hover{
-        background: rgba(75, 75, 75, 0.5);
-        border-radius: 10px;
-        padding: 5px;
-    }
-
-    .text-content{
-        padding: 20px;
-    }
-    .main-content ,.image-placeholder{
-        flex-direction: column;
-        text-align: center;
-        padding: 80px;
-    }
-    .text-content {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
-
-    .image-placeholder {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        height: auto;
-        top: 450px;
-    }
-
-
-
-
-    /* recposive search box | max-width : 1220px*/
-    @media screen and (max-width:1220px){
-        .search-bar{
-            display: none;
-        }
-        .searchBox{
-            display: flex;
-            align-items: center;
-            margin-left: -10px;
-        }
-        .searchToggle{
-            height: 40px;
-            width: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .searchToggle i{
-            position: absolute;
-            color: var(--text-color);
-            font-size: 28px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .searchToggle i.cancle{
-            opacity: 0;
-            pointer-events: none;
-        }
-        .searchToggle.active i.cancle{
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .searchToggle.active i.search{
-            opacity: 0;
-            pointer-events: none;
-        }
-        .searchBox{
-            position: relative;
-        }
-        .searchBox .search-field{
-            position: absolute;
-            bottom: -85px;
-            left: 5px;
-            height: 50px;
-            width: 230px;
-            display: flex;
-            align-items: center;
-            background-color: var(--search-bar);
-            padding: 3px;
-            border-radius: 6px;
-            box-shadow:0 5px 5px rgba(0, 0, 0, 0.1);
-            opacity:0;
-            pointer-events: none;
-            transition: all 0.3s ease;
-        }
-        .searchToggle.active ~ .search-field{
-            bottom: -74px;
-            opacity:1;
-            pointer-events: auto;
-        }
-        .search-field::before{
-            content: '';
-            position: absolute;
-            left: 14px;
-            top: -4px;
-            height: 12px;
-            width: 12px;
-            background-color: var(--search-bar);
-            transform: rotate(-45deg);
-            z-index: -1;
-        }
-        .search-null{
-            background: none;
-        }
-        .search-field input{
-            height: 100%;
-            width: 100%;
-            padding: 0 45px 0 15px;
-            outline: none;
-            border: none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-color);
-            background-color:var(--text-bar);
-        }
-        .darkmode .search-field input{
-            color: var(--text-color);
-        }
-        .search-field i{
-            position: absolute;
-            background: none;
-            color: var(--text-color);
-            left: 15px;
-            font-size: 22px;
-            cursor: pointer;
-        }
-        .darkmode .search-field i{
-            color: var(--text-color);
-        }
-    }
-
-
-
-    /* recposive search box | max-width : 560px*/
-
-    @media screen and (max-width:560px){
-        html{
-            font-size: 55%;
-        }
-        .header{
-            padding:1.5rem 2rem;
-        }
-        .brand img{
-            width:40px;
-            margin-right: 4px;
-
-        }
-        section{
-            padding: 3rem 2rem; 
-         }
-         .icons .box-icon{
-            display: flex;
-            gap: 2px;
-            font-size: 15px;
-            color:var(--text-color);
-            margin-right: -10px;
-        }
-        .searchToggle i{
-            font-size: 15px;
-        }
-        .box i ,.searchBox i{
-            display: inline-block;
-            padding: 10px;
-            background-color: var(--search-bar);
-            border-radius: 10px;
-        }
-        #theme-switch{
-            height: 15px;
-            padding: 10px;
-            background-color: var(--search-bar);
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .searchBox .search-field{
-            width: 180px;
-            height: 30px;
-        }
-        .searchToggle i{
-            margin-right: -40px;
-            font-size: 15px;
-        }
-        #open-sidebar-button {
-            margin-left: auto;
-            font-size: 28px;
-            margin-right: -35px;
-
-        }
-        .search-field i{
-            background: none;
-            font-size: 15px;
-        }
-        .searchToggle.active ~ .search-field{
-            bottom: -50px;
-            opacity:1;
-            pointer-events: auto;
-        }
-        .search-field::before{
-            content: '';
-            position: absolute;
-            left: 30px;
-            top: -4px;
-            height: 12px;
-            width: 12px;
-            background-color: var(--search-bar);
-            transform: rotate(-45deg);
-            z-index: -1;
-        }
-        .text-content{
-            padding: 20px;
-        }
-    }
-
-}
-@media (max-width: 559px) {
-    .text-content {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-
-    .image-placeholder {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: auto;
-        top: 400px;
-    }
-
 }
