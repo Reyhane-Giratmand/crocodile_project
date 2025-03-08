@@ -1,28 +1,24 @@
-
 :root {
-    --body-color: #FBFBFB;
-    --nav-color: #FBFBFB;
-    --side-nav: #FBFBFB;
-    --text-color: #13445A;
-    --search-bar: #f5f5f5;
-    --search-text: #212121;
-    --hover-color:#970747;
-    --txt-color:#212121;
-    --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
-    --p-color:#666;
+  --body-color: #fbfbfb;
+  --nav-color: #fbfbfb;
+  --side-nav: #a6c5d3;
+  --text-color: #13445a;
+  --discription-color:#555;
+  --search-bar: #f5f5f5;
+  --search-text: #212121;
+  --hover-color: #970747;
+  --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
 }
-.darkmode{
-    --body-color: #1f1f1f;
-    --nav-color: rgb(21, 21, 20);
-    --side-nav: rgb(21, 21, 20);
-    --text-color: #FBFBFB;
-    --search-bar: #3f3f3f;
-    --search-text: #212121;
-    --hover-color:#6a5760;
-    --txt-color:#FBFBFB;
-    --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
-    --p-color:#dbdbdb;
-  }
+.darkmode {
+  --body-color: #1f1f1f;
+  --nav-color: rgb(21, 21, 20);
+  --side-nav: rgb(21, 21, 20);
+  --text-color: #fbfbfb;
+  --search-bar: #3f3f3f;
+  --search-text: #212121;
+  --hover-color: #6a5760;
+  --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
+}
 
 body {
   font-family: kalameh;
@@ -33,16 +29,15 @@ body {
 }
 
 .brand {
-    position: relative;
-    right: -30px;
-    gap: 10px;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 4%;
-    width: 100%;
-    margin-right: 80px;
+  position: relative;
+  right: -90px;
+  gap: 12px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 4%;
+  width: 100%;
 }
 
 .brand img {
@@ -68,60 +63,59 @@ header {
 }
 
 .container {
-    display: flex;
-    padding-bottom: 15px;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+  display: flex;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
-.logo{
-    margin-right: -80px;
-}
+
 .logo img {
-    height: 35px;
-    margin-right: 22px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 .nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul li {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
     margin: 0 15px;
+=======
+  margin: 0 10px;
+>>>>>>> parent of 48e77a9 (Merge branch 'main' into index_body)
 }
 
 .nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 16px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    background-color: var(--search-bar);
-    padding: 5px 20px;
-    border-radius: 10px;
-    margin-left: 25px;
-    margin-right: 80px;
-}
-.search-bar i{
-    font-size: 20px;
+  margin-right: 95px;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: var(--search-bar);
+  padding: 5px 20px;
+  border-radius: 10px;
 }
 
 .search-bar input {
-    border: none;
-    outline: none;
-    background: none;
-    padding: 7px;
-    width: 250px;
-    color: var(--text-color);
+  border: none;
+  outline: none;
+  background: none;
+  padding: 11px;
+  width: 300px;
+  color: var(--text-color);
 }
 
 .search-bar button {
@@ -130,23 +124,9 @@ header {
   cursor: pointer;
   color: var(--text-color);
 }
-input[placeholder]{
-    font-family: kalameh;
-}
 
 .search-bar input:hover {
-    border-color: var(--hover-color);
-} 
-.icons .box-icon{
-    display: flex;
-    gap: 11px;
-    font-size: 27px;
-    color:var(--text-color);
-    margin-right: 25px;
-}
-.dark-light i{
-    position: relative;
-    bottom: -1px;
+  border-color: var(--hover-color);
 }
 .icons .box-icon {
   display: flex;
@@ -183,6 +163,7 @@ input[placeholder]{
   background-color: var(--search-bar);
   border-radius: 10px;
 }
+
 .icons a {
   color: var(--text-color);
   text-decoration: none;
@@ -198,23 +179,19 @@ input[placeholder]{
   color: var(--hover-color);
   transition: color 0.3s ease;
 }
-.searchBox i:hover {
-    color: var(--hover-color);
-    transition: color 0.3s ease;
-}
 .nav ul a:hover {
   color: var(--hover-color);
   transition: color 0.3s ease;
 }
 #open-sidebar-button {
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    margin-right: auto;
-    cursor: pointer;
-    color: var(--text-color);
-    font-size: 28px;
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 28px;
 }
 #close-sidebar-button {
   display: none;
@@ -241,15 +218,14 @@ input[placeholder]{
   display: none;
 }
 
-/* style for frist page */
 .main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 172px 0px 50px; 
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 172px 0px 50px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .text-content {
@@ -260,40 +236,38 @@ input[placeholder]{
 }
 
 .text-content h1 {
-    font-size: 40px;
-    color: var(--txt-color);
-    margin-bottom: 20px;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .text-content p {
-    text-align: justify;
-    font-size: 18px;
-    color: var(--p-color);
-    margin-bottom: 20px;
+  text-align: justify;
+  font-size: 18px;
+  color: var(--discription-color);
+  margin-bottom: 20px;
 }
 
 .book-exchange-btn {
-    margin-top: 30px;
-    width: 178px;
-    height: 58px ;
-    padding: 14px 14px 14px;
-    font-family: kalameh;
-    background-color: #971B49;
-    color: #FBFBFB;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 30px;
+  width: 178px;
+  height: 58px;
+  padding: 14px 14px 14px;
+  font-family: kalameh;
+  background-color: var(--hover-color);
+  color: var( --text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .book-exchange-btn:hover {
-    background-color: #780c28;
+  background-color: #0056b3;
 }
 
+/* استایل بخش تصویر */
 .image-placeholder {
   flex: 1;
   max-width: 500px;
@@ -735,21 +709,4 @@ input[placeholder]{
       color: var(--text-color);
     }
   }
-}
-    /* flex: 1;
-    max-width: 500px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 70px;
-    padding: 10px;
-    align-items: center; */
-
-.image-placeholder img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-
 }
