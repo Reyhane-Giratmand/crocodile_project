@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
+    <!-- the tag meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <!--description-->
+        <meta name="description" content="هر کتاب یک سفر است؛ سفر خود را با بومرنگ آغاز کنید! با ما کتاب‌ها را به اشتراک بگذارید و دنیای جدیدی از ادبیات را کشف کنید.">
+    
+        <!--key words-->
+        <meta name="keywords" content="bomerang,Boomerang,boomrang,boomerang,تبادل,کتاب ارزان,کتاب مجانی,کتاب, تبادل کتاب, مطالعه, خرید کتاب, فروش کتاب, بومرنگ">
+    
+        <!--company name-->
+        <meta name="author" content="Boomerang">
+    
+        <!-- to prevent a page from being indexed by search engines-->
+        <meta name="robots" content="noindex, nofollow">
+    
+        <!-- proper display on mobile-->
+        <meta name="mobile-web-app-capable" content="yes">
+    
+        <!-- link Open Graph -->
+        <meta property="og:title" content="بومرنگ | تبادل کتاب">
+        <meta property="og:description" content="با ما کتاب‌هایی که دیگر نیاز ندارید را به اشتراک بگذارید و دنیای جدیدی از ادبیات را کشف کنید.">
+        <meta property="og:image" content="https://Boomerang.com/Assets/Image/share-thumbnail.jpg">
+        <meta property="og:url" content="https://Boomerang.com">
+        <meta property="og:type" content="website">
+    
+        <!-- meta tag for twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="بومرنگ | تبادل کتاب">
+        <meta name="twitter:description" content="با ما کتاب‌هایی که دیگر نیاز ندارید را به اشتراک بگذارید و دنیای جدیدی از ادبیات را کشف کنید.">
+        <meta name="twitter:image" content="https://Boomerang.com/Assets/Image/share-thumbnail.jpg">
+    
+
+
+
+
+
+    <!-- name and logo title -->
     <title>بومرنگ</title>
+    <link rel="icon" type="image/svg" href="Assets/Image/boomrang_logo.svg">
 
         <!-- link css and font -->
         <link rel="stylesheet" href="Css/Style.css">
         <link rel="stylesheet" href="../crocodile_project/Assets/font.css">
+        <link rel="stylesheet" href="Assets/animation/aos.css">
+        <link rel="stylesheet" href="Css/resposive.css">
 
         <!-- font awecome cdn for slider -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -19,6 +61,7 @@
 
         <!-- javascript link -->
         <script type="text/javascript" src="Jave script/app.js" defer></script>
+        <script src="Assets/animation/aos.js"></script>
 
 </head>
 <body>
@@ -28,177 +71,78 @@
         <div class="container">
             
             <!-- button bar for recposive -->
-            <button id="open-sidebar-button" onclick="openSidebar()">
+            <button data-aos="zoom-in-left" data-aos-daely="150" id="open-sidebar-button" onclick="openSidebar()">
                 <i class='bx bx-menu sidebarOpen'></i>
                 </button>
 
             <!--name and image logo-->
-            <div class="logo">
-                <div class="brand">
+            <div class="logo" >
+                <div class="brand" data-aos="zoom-in-left" data-aos-daely="150">
                     <span class="image"><img src="Assets/Image/boomrang_logo.svg" alt=""></span>
-                    <h1> بومرنگ </h1>
+                    <h1> بـومرنگ </h1>
                 </div>
             </div>
 
             <!-- items in navbar -->
-            <nav class="nav show color-side" id="navbar" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <nav class="nav color-side" id="navbar" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
                 <ul>
-                    <li><button  id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><i class='bx bx-x siderbarClose'></i></button></li>
-                    <li class="home-li li-hover"><a href="#index.html" aria-current="page">صفحه اصلی</a></li>
-                    <li class="li-hover"><a href="#blog.html">وبلاگ</a></li>
-                    <li class="li-hover"><a href="#about.html">درباره ما</a></li>
-                    <li class="li-hover"><a href="#call.html">تماس با ما</a></li>
+                    <li data-aos="zoom-in-left" data-aos-daely="150"><button  id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><i class='bx bx-x siderbarClose'></i></button></li>
+                    <li data-aos="zoom-in-left" data-aos-daely="300" class="home-li li-hover"><a href="#index.html" aria-current="page">صفحه اصلی</a></li>
+                    <li data-aos="zoom-in-left" data-aos-daely="450" class="li-hover"><a href="#blog.html">وبلاگ</a></li>
+                    <li data-aos="zoom-in-left" data-aos-daely="600" class="li-hover"><a href="#about.html">درباره ما</a></li>
+                    <li data-aos="zoom-in-left" data-aos-daely="750" class="li-hover"><a href="#call.html">تماس با ما</a></li>
                 </ul>
             </nav>
             <!--rgba color for sidebar-->
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
             <!--box searchbar-->
-            <div class="search-bar">
-                <input type="text" placeholder="جستجو کنید...">
+            <div class="search-bar" data-aos="zoom-in-left" data-aos-daely="150">
+                <input type="text" placeholder="جستجوی کتاب...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-            <!-- **************************** -->
+            <!-- *************recponsive*************** -->
                 <!--searchBox-->
-    <div class="searchBox">
-        <div class="searchToggle">
-            <i class='bx bx-x cancle'></i>
-            <i class='bx bxs-search search'></i>
-        </div>
+            <div class="searchBox">
+                <div class="searchToggle">
+                    <i  class='bx bx-x cancle'></i>
+                    <i data-aos="zoom-in-left" data-aos-daely="150" class='bx bxs-search search'></i>
+                </div>
              <!--search field-->
             <div class="search-field">
-                <input class="text" placeholder="جستجو..." autocomplete="on">
+                <input class="text" placeholder="جستجوی کتاب..." autocomplete="on">
                 <i class='bx bxs-search'></i>
             </div>
             </div>
-            <!-- **************************** -->
+            <!-- *************recponsive*************** -->
 
             <!--icons for mode and shopping and login-->
             <div class="icons">
                 <div class="box-icon">
                     <div class="dark-light" id="theme-switch">
-                    <div class="box-mode"> <i class="bx bxs-moon"></i></div>                      <!--icon dark-mode-->
-                    <div class="box-mode"> <i class="bx bxs-sun"></i></div>                       <!--icon light-mode-->
+                    <div class="box-mode"> <i data-aos="zoom-in-left" data-aos-daely="300" class="bx bxs-moon"></i></div>                      <!--icon dark-mode-->
+                    <div class="box-mode"> <i data-aos="zoom-in-left" data-aos-daely="450" class="bx bxs-sun"></i></div>                       <!--icon light-mode-->
                     </div>
 
-                    <a href=""><div class="box"><i class="bx bxs-user"></i></div></a>             <!--icon login-->
-                    <a href=""><div class="box"><i class="bx bxs-shopping-bag" ></i></div></a>    <!--icon shoping bag-->
+                    <a href=""><div class="box"><i data-aos="zoom-in-left" data-aos-daely="600" class="bx bxs-user"></i></div></a>             <!--icon login-->
+                    <a href=""><div class="box"><i data-aos="zoom-in-left" data-aos-daely="750" class="bx bxs-shopping-bag" ></i></div></a>    <!--icon shoping bag-->
             </div>
             </div>
     </header>
 </section>
-<!-- section header ends -->
+
+    <!-- about section strats -->
 <section class="main-content">
-    <div class="text-content">
+    <div class="text-content" data-aos="fade-left" data-aos-daely="300">
       <h1>هر کتاب یک سفر است؛ سفر خود را با بومرنگ آغاز کنید!</h1>
       <p>با ما، هر کتابی که به آن علاقه داشتید، می‌تواند به یک داستان جدید تبدیل شود. فقط کافی است کتابی که به آن نیاز ندارید را با دیگران به اشتراک بگذارید و به دنیای جدیدی از ادبیات وارد شوید.</p>
       <button class="book-exchange-btn">تبادل کتاب</button>
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div class="image-placeholder" data-aos="fade-right" data-aos-daely="600">
-        <img src="Assets/Image/website illostration.svg" alt="">
-       </div>
-     </section>
+     <img src="Assets/Image/website illostration.svg" alt="">
+    </div>
+  </section>
     <!-- about section ends -->
-=======
-    <div class="image-placeholder">
->>>>>>> parent of 48e77a9 (Merge branch 'main' into index_body)
-=======
-    <div class="image-placeholder">
->>>>>>> parent of 48e77a9 (Merge branch 'main' into index_body)
-      
-    </div>
-  </section>
-  <!-- book classification section -->
-  <section>
-    <div class="title-section">
-        <h2 class="section-title">سفر به دنیای کتاب: هر صفحه یک تجربه</h2>
-        <p class="section-description">از تجربه‌ی تبادل کتاب با دیگران بهره‌مند شوید. برای مشاهده اطلاعات بیشتر و انتخاب کتاب‌های جذاب، همین حالا روی دکمه کلیک کنید!</p>
-        <button class="main-button">مشاهده‌ی کتاب‌ها</button>
-    </div>
-    <div class="book-container">
-        <div class="book-card">
-            <img src="Assets/Image/boomrang_logo.svg" alt="کتاب توسعه فردی">
-            <h3 class="book-title">کتاب‌های توسعه فردی</h3>
-            <p class="book-description">با هر صفحه، یک قدم به نسخه‌ی بهتر خودتان نزدیک‌تر شوید!</p>
-            <button class="book-button">مشاهده‌ی همه</button>
-        </div>
-    
-        <div class="book-card featured">
-            <img src="Assets/Image/boomrang_logo.svg" alt="کتاب کلاسیک">
-            <h3 class="book-title">کتاب‌های کلاسیک</h3>
-            <p class="book-description">جاودانه‌ترین داستان‌ها و شاهکارهای ادبی را دوباره زندگی کنید!</p>
-            <button class="book-button">مشاهده‌ی همه</button>
-        </div>
-    
-        <div class="book-card">
-            <img src="Assets/Image/boomrang_logo.svg" alt="کتاب فلسفه">
-            <h3 class="book-title">کتاب‌های فلسفی</h3>
-            <p class="book-description">جهان را از زاویه‌ای متفاوت ببینید، اندیشه‌ها را بشکافید!</p>
-            <button class="book-button">مشاهده‌ی همه</button>
-        </div>
-    </div>
-    
-  </section>
-
-<!-- section our weblogs -->
-<section style="margin-bottom: 500px; display: flex; justify-content: center;">
-    <div class="weblog-cards-holder">
-        <div class="weblog-card"><a href="#blog.html">              <!-- product card 1 -->
-            <div class="weblog-card-image"><img src="" alt="متاسفانه این عکس لود نمی‌شود"></div>
-            <div class="weblog-card-detail">
-                <div class="weblog-card-label">خواندنی</div>
-                <p>تبادل کتاب راهی هوشمند</p>
-                <hr>
-                <div class="weblog-card-view">
-                    <div><i class="fa-solid fa-calendar"></i>سه روز پیش</div>
-                    <div>110 بازدید</div>
-                </div>
-            </div>
-        </a></div>
-        <div class="weblog-card"><a href="#blog.html">              <!-- product card 2 -->
-            <div class="weblog-card-image"><img src="" alt="متاسفانه این عکس لود نمی‌شود"></div>
-            <div class="weblog-card-detail">
-                <div class="weblog-card-label">خواندنی</div>
-                <p>ایجاد عادت در کتاب‌خوانی</p>
-                <hr>
-                <div class="weblog-card-view">
-                    <div><i class="fa-solid fa-calendar"></i>سه روز پیش</div>
-                    <div>110 بازدید</div>
-                </div>
-            </div>
-        </a></div>
-        <div class="weblog-card"><a href="#blog.html">              <!-- product card 3 -->
-            <div class="weblog-card-image"><img src="" alt="متاسفانه این عکس لود نمی‌شود"></div>
-            <div class="weblog-card-detail">
-                <div class="weblog-card-label">خواندنی</div>
-                <p>ترفند‌هایی برای مطالعه موثر</p>
-                <hr>
-                <div class="weblog-card-view">
-                    <div><i class="fa-solid fa-calendar"></i>سه روز پیش</div>
-                    <div>110 بازدید</div>
-                </div>
-            </div>
-        </a></div>
-        <div class="weblog-card"><a href="#blog.html">              <!-- product card 4 -->
-            <div class="weblog-card-image"><img src="" alt="متاسفانه این عکس لود نمی‌شود"></div>
-            <div class="weblog-card-detail">
-                <div class="weblog-card-label">خواندنی</div>
-                <p>چگونه بیشتر کتاب بخوانیم؟</p>
-                <hr>
-                <div class="weblog-card-view">
-                    <div><i class="fa-solid fa-calendar"></i>سه روز پیش</div>
-                    <div>110 بازدید</div>
-                </div>
-            </div>
-        </a></div>
-    </div>
-</section>
-
-
-    <!--link javascript -->
-    <script src="Jave script/app.js"></script>
 
 
 </body>
