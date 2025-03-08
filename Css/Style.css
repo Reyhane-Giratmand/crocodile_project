@@ -57,7 +57,6 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--nav-color);
-  box-shadow: var(--shadow-color);
   z-index: 1000;
   width: 100%;
   border-bottom: 1px solid var(--nav-color);
@@ -643,8 +642,10 @@ input[placeholder] {
   justify-content: space-between;
   color: var(--border-clor);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   padding: 10px 18px;
   margin-top: -17px;
   text-align: right;
+}
+.weblog-card-view i{
 }
