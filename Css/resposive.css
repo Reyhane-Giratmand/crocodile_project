@@ -253,6 +253,15 @@
             padding: 20px;
         }
     }
+    .book-container {
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 800px;
+      }
+      .book-card {
+        width: 300px; 
+      }
+    
 
 }
 @media (max-width: 576px) {
