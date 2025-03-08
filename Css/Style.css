@@ -431,3 +431,75 @@ input[placeholder] {
   background-color: #ccc;
   color: #0f3c52;
 }
+
+/* weblog section */
+.weblog-cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .weblog-card {
+    margin: 20px 20px;
+    width: 240px;
+    height: 374px;
+    background-color: var(--nav-color);
+    border-radius: 10px;
+    border: solid 1px var(--text-color);
+  }
+  
+  .weblog-card a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .weblog-card-image {
+    display: flex;
+    background-color: var(--search-bar);
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .weblog-card-detail {
+    font-size: 20px;
+    padding: 5%;
+    height: 100%;
+  }
+  
+  .weblog-card hr {
+    width: 88%;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 2% auto;
+  }
+  
+  .weblog-card-label {
+    width: 25%;
+    height: 5%;
+    text-align: center;
+    color: var(--search-bar);
+    background-color: var(--text-color);
+    border-radius: 5px;
+    padding: 5px 5px 5px;
+  }
+  
+  .weblog-card-view {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+  }
+  
+  .weblog-card-detail i {
+    margin-left: 10px;
+  }
+  
+  .weblog-card-detail p {
+    color: var(--text-color);
+  }
