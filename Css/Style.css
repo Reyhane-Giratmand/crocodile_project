@@ -90,6 +90,8 @@ header {
 }
 
 .nav ul li {
+  display: flex;
+  justify-content: space-between;
     margin: 0 15px;
 }
 
@@ -570,7 +572,8 @@ input[placeholder]{
     border-radius: 0 10px 10px 0;
   }
   .weblog-card-detail {
-    margin: auto;
+    margin: 1% 1%;
+    padding: 0;
     float: left;
     width: 65%;
     height: 100%;
