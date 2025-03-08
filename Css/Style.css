@@ -85,9 +85,13 @@ header {
 
 .nav ul li {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
     margin: 0 15px;
+=======
+  margin: 0 10px;
+>>>>>>> parent of 48e77a9 (Merge branch 'main' into index_body)
 =======
   margin: 0 10px;
 >>>>>>> parent of 48e77a9 (Merge branch 'main' into index_body)
