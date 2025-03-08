@@ -255,7 +255,7 @@ input[placeholder] {
 .text-content p {
   text-align: justify;
   font-size: 18px;
-  color: var(--p-color);
+  color: var(--discription-color);
   margin-bottom: 20px;
 }
 
@@ -265,6 +265,7 @@ input[placeholder] {
   height: 58px;
   padding: 14px 14px 14px;
   font-family: kalameh;
+  font-weight: 600;
   background-color: #971b49;
   color: #fbfbfb;
   border: none;
@@ -300,6 +301,7 @@ input[placeholder] {
   border-radius: 10px;
 }
 /* book classification section */
+
 .title-section {
   display: flex;
   flex-direction: column;
@@ -307,7 +309,7 @@ input[placeholder] {
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 163px;
+  margin-top: 165px;
   width: 100%;
 }
 
@@ -315,6 +317,7 @@ input[placeholder] {
   font-size: 24px;
   font-weight: bold;
   color: var(--search-text);
+  
   width: 100%;
 }
 
@@ -322,28 +325,27 @@ input[placeholder] {
   font-size: 18px;
   color: var(--discription-color);
   max-width: 600px;
-  margin-top: 15px;
+  margin-top: 3px;
 }
 
 .main-button {
   width: 202px;
   height: 58px;
   background-color: var(--hover-color);
-
   font-family: kalameh;
   font-weight: 600;
   color: var(--nav-color);
   border: none;
-
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
   margin-top: 50px;
+  padding: 13px;
 }
 
 .main-button:hover {
-  background-color: var(--search-bar);
+  background-color:   #780c28;
 }
 
 .book-container {
@@ -394,7 +396,7 @@ input[placeholder] {
   height: 60px;
   font-size: 18px;
   color: var(--discription-color);
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .book-button {
@@ -405,8 +407,9 @@ input[placeholder] {
   color: var(--nav-color);
   border: none;
   padding: 10px 14px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: kalameh;
+  font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
