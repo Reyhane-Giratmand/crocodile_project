@@ -171,7 +171,42 @@
         }
     }
 
-
+    /* recposive search box | max-width : 768px*/
+    @media screen and (max-width:768px){
+        /* weblog card recponsive */
+  .weblog-card {
+    display: flex;
+    width: 100%;
+    height: 100px;
+  }
+  .weblog-card a {
+    width: 100%;
+  }
+  .weblog-card-image {
+    float: right;
+    width: 30%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+  .weblog-card-detail {
+    margin: 1% 1%;
+    padding: 0;
+    float: left;
+    width: 65%;
+    height: 100%;
+  }
+  .weblog-card-detail p,
+  .weblog-card-label {
+    margin: 0 0 15px;
+    float: right;
+  }
+  .weblog-card-label {
+    float: left;
+    font-size: 15px;
+    width: 55px;
+    height: 20px;
+  }
+    }
 
     /* recposive search box | max-width : 576px*/
 
