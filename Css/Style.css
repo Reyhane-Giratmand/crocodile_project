@@ -647,5 +647,135 @@ input[placeholder] {
   margin-top: -17px;
   text-align: right;
 }
-.weblog-card-view i{
+
+
+
+
+
+
+/* section review */
+.review {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.review .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1200;
+  font-family: Kalameh;
+  font-weight: 400;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  width: 1000px;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #446878;
+  width: 380px;
+  height: 353px;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #446878;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-left: 110px;
+}
+.review-card hr{
+  color: #446878;
+  position: relative;
+}
+.review-text {
+  font-size: 18px;
+  color: #446878;
+  padding: 20px 28px 0px 20px;
+  text-align: right;
+  line-height: 30px;
+  flex-grow: 1; 
+}
+.footer-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  top: 10px;
+  font-family: Kalamehl;
+  font-size: 18px;
+  margin-top: auto;
+
+}
+
+.footer-box .image{
+  margin-right: 129px;
+}
+
+.review-footer {
+  color: #446878;
+  font-weight: 100;
+}
+.footer-box img{
+  font-size: 26px;
+  color: #446878;
+  margin-left: 4px;
+}
+.review-icon{
+  font-size: 16px;
+  color: #446878;
+  font-weight: 100;
+  position: relative;
+  top: -5px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  background: none;
+  transition: 0.3s;
+}
+
+.left-button {
+  right: -140px;
+}
+
+.right-button {
+  left: -140px;
 }
