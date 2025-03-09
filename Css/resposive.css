@@ -366,6 +366,7 @@
     .image-search {
        display: none;
     }
+
     
 }
 
@@ -415,9 +416,8 @@
         font-weight: 200;
         padding: 10px 5px;
         margin-top: -17px;
-      }
-
-      } 
+    }
+} 
 
 
 
@@ -491,6 +491,55 @@
       } 
 
 
+/* section why boomrang */
+@media screen and (max-width: 768px){
+    .about-boomrang-detail{
+        margin-top: 0;
+    }
+    /* .about-boomrang-detail h2{
+        margin-top: 0;
+    } */
+    .about-boomrang-detail p{
+        margin-top: 20px;
+        margin-bottom: 28px;
+    }
+    .about-boomrang-detail button{
+        margin-top: 0;
+    }
+}
+
+/* section about boomrang */
+@media screen and (max-width:1200px) {
+    .about-boomrang-img div:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width:992){
+    .about-boomrang{
+        display: block;
+    }
+    .about-boomrang-detail p{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .about-boomrang-detail button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576) {
+    .about-boomrang h2{
+        font-size: 30px;
+    }
+    .about-boomrang p{
+        font-size: 20px;
+    }
+    .about-boomrang-img{
+        height: 250px;
+    }
+}
+
 
 /* section review */
 
@@ -516,7 +565,7 @@
     }
     
     .review-card {
-        background: white;
+        background: var(--card-color);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);

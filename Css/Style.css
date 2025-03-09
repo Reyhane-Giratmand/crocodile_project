@@ -29,7 +29,6 @@
   --boder-color:#fbfbfb;
   --card-color:rgb(21, 21, 20);
 }
-
 body {
   font-family: kalameh;
   direction: rtl;
@@ -552,12 +551,9 @@ input[placeholder] {
 }
 
 
-
-
-
 /* section our weblogs */
 .weblog-section {
-  margin-bottom: 500px;
+  margin-bottom: 140px;
   text-align: center;
   margin-top: 195px;
 }
@@ -658,7 +654,76 @@ input[placeholder] {
   margin-top: -17px;
   text-align: right;
 }
-
+/* about boomrang */
+.about-boomrang-section{
+  display: flex;
+  width: 80%;
+  margin-bottom: 100px;
+}
+.about-boomrang{
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-boomrang-detail{
+    margin-top: auto;
+}
+.about-boomrang p{
+  color: var(--discription-color);
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+.about-boomrang h2{
+  color: var(--discription-color);
+}
+.about-boomrang-img{
+    display: flex;
+    height: 383px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 5%;
+}
+.about-boomrang img{
+    display: block;
+    width: 290px;
+    height: 100%;
+    margin: 0 14px 0 14px;
+    border-radius: 20px;
+    background-color: var(--search-bar);
+    object-fit: cover;
+}
+/* why boomrang */
+.why-boomrang-section{
+    margin-bottom: 150px;
+}
+.mhy-boomrang-icon{
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background-color: var(--border-clor);
+}
+.why-boomrang-detail{
+    text-align: center;
+  }
+.why-boomrang-detail p{
+  color: var(--discription-color);
+  width: 270px;
+}
+.why-boomrang-detail h3, i{
+  color: var(--discription-color);
+}
+.why-boomrang-cards-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
 
 
 
