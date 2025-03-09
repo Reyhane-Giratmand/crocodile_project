@@ -4,13 +4,14 @@
   --side-nav: #a6c5d3;
   --text-color: #13445a;
   --border-clor: #446878;
-  --discription-color: #555;
+  --discription-color: #858492;
   --search-bar: #f5f5f5;
   --search-text: #212121;
   --s-text: #212121;
   --hover-color: #970747;
   --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
   --boder-color:#13445a;
+  --card-color:#fbfbfb;
 }
 
 .darkmode {
@@ -26,6 +27,7 @@
   --discription-color: #f5f5f5;
   --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
   --boder-color:#fbfbfb;
+  --card-color:rgb(21, 21, 20);
 }
 
 body {
@@ -137,10 +139,6 @@ header {
 
 input[placeholder] {
   font-family: kalameh;
-}
-
-.search-bar input:hover {
-  border-color: var(--hover-color);
 }
 
 .icons .box-icon {
@@ -667,8 +665,7 @@ input[placeholder] {
 
 
 /* section review */
-/* .review {
-  background-color: #f8f9fa;
+.review {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,6 +674,7 @@ input[placeholder] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 .review .container {
@@ -703,11 +701,11 @@ input[placeholder] {
 }
 
 .review-card {
-  background: white;
+  background-color: var(--card-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #446878;
+  border: 1px solid var(--boder-color);
   width: 380px;
   height: 353px;
   text-align: center;
@@ -721,25 +719,26 @@ input[placeholder] {
 }
 
 .stars {
-  color: #446878;
+  color: var(--text-color);
   font-size: 30px;
   margin-bottom: 10px;
   padding-top: 15px;
   padding-left: 110px;
 }
 .review-card hr{
-  color: #446878;
+  color: var(--boder-color);
   position: relative;
+  width: 370px;
 }
 .review-text {
   font-size: 18px;
-  color: #446878;
+  color: var(--text-color);
   padding: 20px 28px 0px 20px;
   text-align: right;
   line-height: 30px;
   flex-grow: 1; 
 }
-.footer-box{
+.review-card .footer-box{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -752,21 +751,21 @@ input[placeholder] {
 }
 
 .footer-box .image{
-  margin-right: 129px;
+  margin-right: 170px;
 }
 
 .review-footer {
-  color: #446878;
+  color: var(--boder-color);
   font-weight: 100;
 }
 .footer-box img{
   font-size: 26px;
-  color: #446878;
+  color: var(--boder-color);
   margin-left: 4px;
 }
 .review-icon{
   font-size: 16px;
-  color: #446878;
+  color: var(--boder-color);
   font-weight: 100;
   position: relative;
   top: -5px;
@@ -786,9 +785,9 @@ input[placeholder] {
 }
 
 .left-button {
-  right: -140px;
+  right: 190px;
 }
 
 .right-button {
-  left: -140px;
-} */
+  left: 190px;
+}

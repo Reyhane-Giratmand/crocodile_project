@@ -494,9 +494,9 @@
 
 /* section review */
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
 
-    .container {
+    .container-review{
         display: flex;
         align-items: center;
         position: relative;
@@ -545,7 +545,7 @@
         background: none;
         transition: 0.3s;
     }
-        .container {
+        .container-review {
             width: 100%;
         }
     
@@ -553,11 +553,11 @@
             width: 100%;
         }
         .left-button {
-            right: -10px;
+            right: 20px;
         }
         
         .right-button {
-            left: -10px;
+            left: 20px;
         }
-    } */
+    }
     

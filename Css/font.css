@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Kalameh';
     src: url('../Font/WebFonts/_Woff2/KalamehWeb-Regular.woff2') format('woff2'),
-         url('../Font/WebFonts/_Woff2/KalamehWeb-Regular.woff') format('woff');
+         url('../Font/WebFonts/_Woff/KalamehWeb-Regular.woff') format('woff');
     font-weight: 400; /* Regular */
     font-style: normal;
 }
@@ -15,8 +15,8 @@
 }
 @font-face {
     font-family: 'Kalamehl';
-    src: url('Font/WebFonts/_Woff2/KalamehWeb-Light.woff2') format('woff2'),
-         url('Font/WebFonts/_Woff2/KalamehWeb-Light.woff') format('woff');
+    src: url('../Font/WebFonts/_Woff2/KalamehWeb-Light.woff2') format('woff2'),
+         url('../Font/WebFonts/_Woff/KalamehWeb-Light.woff') format('woff');
     font-weight: 600; /* light */
     font-style: normal;
 }
