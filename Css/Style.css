@@ -676,7 +676,9 @@ input[placeholder] {
     margin-bottom: 100px;
 }
 .about-boomrang h2{
-  color: var(--discription-color);
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: var(--s-text);
 }
 .about-boomrang-img{
     display: flex;
@@ -713,8 +715,11 @@ input[placeholder] {
   color: var(--discription-color);
   width: 270px;
 }
-.why-boomrang-detail h3, i{
+.why-boomrang-detail i{
   color: var(--discription-color);
+}
+.why-boomrang-detail h3{
+  color: var(--s-text);
 }
 .why-boomrang-cards-holder {
   display: flex;
