@@ -861,3 +861,70 @@ input[placeholder] {
 .right-button {
   left: 190px;
 }
+
+
+
+
+/* faq section */
+.section-faq{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+
+}
+.accordion{
+  max-width: 967px;
+}
+.accordion-content .header .bx{
+  position: relative;
+  font-size: 50px;
+  top: 17px;
+  left: 10px;
+}
+
+.accordion .accordion-content {
+  margin: 22px 0;
+  border-radius: 10px;
+  background: var(--body-color);
+  border: 1px solid var(--border-clor);
+}
+.accordion-content:hover{
+  border: 1px solid var(--boder-color);
+}
+
+.accordion-content .header{
+  display: flex;
+  min-height: 121px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.accordion-content .header .title{
+  font-family: 'Kalameh';
+  font-weight: 600;
+  font-size: 22px;
+  padding: 44px 58px;
+  position: relative;
+  top: 20px;
+}
+.accordion-content .header i{
+  font-size: 15px;
+  color: var(--text-color);
+}
+.accordion-content .description{
+  height: 0;
+  font-size: 18px;
+  font-family: 'Kalameh';
+  line-height: 30px;
+  font-weight: 400;
+  padding-right:75px;
+  padding-left: 260px;
+  position: relative;
+  top: -30px;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
