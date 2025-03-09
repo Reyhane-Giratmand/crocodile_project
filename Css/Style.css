@@ -904,6 +904,7 @@ input[placeholder] {
   transition: all 0.2s linear;
 }
 .accordion-content .header .title{
+  color: var(--text-color);
   font-family: 'Kalameh';
   font-weight: 600;
   font-size: 22px;
@@ -927,4 +928,5 @@ input[placeholder] {
   top: -30px;
   transition: all 0.2s linear;
   overflow: hidden;
+  color: var(--discription-color);
 }
