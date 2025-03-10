@@ -470,7 +470,8 @@ input[placeholder] {
 }
 
 .book-card.featured .book-button:hover {
-  background-color: #103c4e;
+  color: var(--body-color);
+  background-color: #6a5760;
 }
 
 
