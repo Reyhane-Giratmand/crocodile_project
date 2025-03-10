@@ -941,8 +941,7 @@ input[placeholder] {
   padding: 40px 20px;
 }
 .footer-content {
-  height: 150px;
-  width: 100%;
+  height: 170px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -953,7 +952,8 @@ input[placeholder] {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 100px;
+  right: 658px;
+  top: 10px;
 }
 .contact a{
   text-decoration: none;
@@ -961,7 +961,7 @@ input[placeholder] {
   top: 200px;
 }
 .logoh1 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   color: var(--text-color);
   margin-right: 10px;
@@ -977,14 +977,22 @@ input[placeholder] {
 }
 .footer-nav {
   display: flex;
-  gap: 15px;
+  gap: 30px;
+  position: absolute;
+  top: 90px;
+  right: 70px;
+}
+.address{
+  font-size: 22px;
+  align-items: center;
+  position: absolute;
+  right: 630px;
+  top: 80px;
 }
 .footer-nav a {
   color: var(--discription-color);
-  position: relative;
-  top: -70px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 .footer-nav a:hover {
   color: #780c28;
@@ -994,7 +1002,7 @@ input[placeholder] {
   gap: 20px;
   position: absolute;
   float: left;
-  right: 1200px;
+  right: 1110px;
 }
 .social-icons a {
   height: 40px;
