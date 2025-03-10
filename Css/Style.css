@@ -1019,3 +1019,6 @@ input[placeholder] {
 .social-icons a:hover {
   background-color: #103c4e;
 }
+.footer-res{
+  display: none;
+}
