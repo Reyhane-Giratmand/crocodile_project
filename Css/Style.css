@@ -1,7 +1,7 @@
 :root {
   --body-color: #fbfbfb;
   --nav-color: #fbfbfb;
-  --side-nav: #a6c5d3;
+  --side-nav: #fbfbfb;
   --text-color: #13445a;
   --border-clor: #446878;
   --discription-color: #858492;
@@ -12,6 +12,7 @@
   --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
   --boder-color:#13445a;
   --card-color:#fbfbfb;
+  --circle-color:#446878;
 }
 
 .darkmode {
@@ -28,6 +29,7 @@
   --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
   --boder-color:#fbfbfb;
   --card-color:rgb(21, 21, 20);
+  --circle-color:#3f3f3f;
 }
 body {
   font-family: kalameh;
@@ -282,7 +284,7 @@ input[placeholder] {
 
 .text-content p {
   text-align: justify;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--discription-color);
   margin-bottom: 20px;
 }
@@ -355,7 +357,7 @@ input[placeholder] {
 .section-description {
   font-size: 18px;
   color: var(--discription-color);
-  max-width: 600px;
+  max-width: 700px;
   margin-top: 3px;
 }
 
@@ -471,7 +473,7 @@ input[placeholder] {
 
 .book-card.featured .book-button:hover {
   color: var(--body-color);
-  background-color: #6a5760;
+  background-color: #780c28;
 }
 
 
@@ -655,32 +657,41 @@ input[placeholder] {
   margin-top: -17px;
   text-align: right;
 }
+
+
+
+
 /* about boomrang */
 .about-boomrang-section{
   display: flex;
   width: 80%;
   margin-bottom: 100px;
 }
+
 .about-boomrang{
   width: 80%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
+
 .about-boomrang-detail{
     margin-top: auto;
 }
+
 .about-boomrang p{
   color: var(--discription-color);
     width: 80%;
     text-align: justify;
     margin-bottom: 100px;
 }
+
 .about-boomrang h2{
   font-size: 32px;
   margin-bottom: 35px;
   color: var(--s-text);
 }
+
 .about-boomrang-img{
     display: flex;
     height: 383px;
@@ -688,6 +699,7 @@ input[placeholder] {
     text-align: center;
     margin-right: 5%;
 }
+
 .about-boomrang img{
     display: block;
     width: 290px;
@@ -697,31 +709,50 @@ input[placeholder] {
     background-color: var(--search-bar);
     object-fit: cover;
 }
+
+
+
 /* why boomrang */
 .why-boomrang-section{
     margin-bottom: 150px;
 }
-.mhy-boomrang-icon{
+
+.why-boomrang-icon{
+    position: relative;
+    left: -105px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 55px;
     height: 55px;
-    border-radius: 100%;
-    background-color: var(--border-clor);
+    border-radius: 50%;
+    background-color: var(--circle-color);
 }
+
+.why-boomrang-icon .circle{
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
 .why-boomrang-detail{
     text-align: center;
   }
+
 .why-boomrang-detail p{
-  color: var(--discription-color);
+  color: var(--border-clor);
   width: 270px;
 }
+
 .why-boomrang-detail i{
   color: var(--discription-color);
 }
+
 .why-boomrang-detail h3{
   color: var(--s-text);
 }
+
 .why-boomrang-cards-holder {
   display: flex;
   flex-wrap: wrap;
@@ -736,6 +767,30 @@ input[placeholder] {
 
 
 /* section review */
+.title-section-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -130px;
+  margin-top: 165px;
+  width: 100%;
+}
+
+.section-title-review {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--s-text);
+  width: 100%;
+}
+
+.section-description-review {
+  font-size: 18px;
+  color: var(--discription-color);
+  max-width: 700px;
+  margin-top: 3px;
+}
 .review {
   display: flex;
   justify-content: center;
@@ -753,7 +808,6 @@ input[placeholder] {
   align-items: center;
   position: relative;
   width: 1200;
-  font-family: Kalameh;
   font-weight: 400;
 }
 
@@ -796,11 +850,13 @@ input[placeholder] {
   padding-top: 15px;
   padding-left: 110px;
 }
+
 .review-card hr{
   color: var(--boder-color);
   position: relative;
   width: 370px;
 }
+
 .review-text {
   font-size: 18px;
   color: var(--text-color);
@@ -809,16 +865,25 @@ input[placeholder] {
   line-height: 30px;
   flex-grow: 1; 
 }
+
 .review-card .footer-box{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   top: 10px;
-  font-family: Kalamehl;
   font-size: 18px;
   margin-top: auto;
+}
 
+.footer-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  margin-top: auto;
 }
 
 .footer-box .image{
@@ -829,15 +894,17 @@ input[placeholder] {
   color: var(--boder-color);
   font-weight: 100;
 }
+
 .footer-box img{
   font-size: 26px;
   color: var(--boder-color);
   margin-left: 4px;
 }
+
 .review-icon{
   font-size: 16px;
   color: var(--boder-color);
-  font-weight: 100;
+  font-weight: 300;
   position: relative;
   top: -5px;
 }
@@ -867,6 +934,29 @@ input[placeholder] {
 
 
 /* faq section */
+.title-section-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -70px;
+  width: 100%;
+}
+
+.section-title-faq {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--s-text);
+  width: 100%;
+}
+
+.section-description-faq {
+  font-size: 18px;
+  color: var(--discription-color);
+  max-width: 700px;
+  margin-top: 3px;
+}
 .section-faq{
   min-height: 100vh;
   display: flex;
