@@ -12,13 +12,14 @@
   --shadow-color: 0 0 15px #f5f5f5, 0 0 15px #f5f5f5;
   --boder-color:#13445a;
   --card-color:#fbfbfb;
+  --book-card:#fbfbfb;
   --circle-color:#446878;
 }
 
 .darkmode {
-  --body-color: #1f1f1f;
-  --nav-color: rgb(21, 21, 20);
-  --side-nav: rgb(21, 21, 20);
+  --body-color: #35374B;
+  --nav-color:#35374B;
+  --side-nav: #35374B;
   --text-color: #fbfbfb;
   --border-clor: #fbfbfb;
   --s-text: #fbfbfb;
@@ -28,7 +29,8 @@
   --discription-color: #f5f5f5;
   --shadow-color: 0 0 15px #1f1f1f, 0 0 15px #1f1f1f;
   --boder-color:#fbfbfb;
-  --card-color:rgb(21, 21, 20);
+  --card-color:#35374B;
+  --book-card:#446878;
   --circle-color:#3f3f3f;
 }
 body {
@@ -397,7 +399,7 @@ input[placeholder] {
 .book-card {
   width: 325px;
   height: 575px;
-  background: var(--body-color);
+  background: var(--book-card);
   padding: 30px;
   border-radius: 10px;
   border: 1px solid var(--boder-color);
