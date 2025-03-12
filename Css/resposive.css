@@ -748,6 +748,10 @@
             width:229px;
             height: 387px;
             padding: 18px 8px;
+            margin-top: -3%;
+          }
+          .product-more div a{
+            font-size: 100%;
           }
           .last{
             display: none;
@@ -759,6 +763,9 @@
             width:180px;
             height: 280px;
             padding: 18px 0px;
+          }
+          .product-more div a{
+            font-size: 100%;
           }
           .last{
             display: none;
@@ -773,6 +780,11 @@
             width:180px;
             height: 280px;
             padding: 18px 0px;
+            font-size: 150%;
+            margin-top: 0;
+          }
+          .product-more div a{
+            font-size: 150%;
           }
           .last ,
           .one-last{
