@@ -1029,22 +1029,20 @@ input[placeholder] {
 .footer {
   position: relative;
   background-color:var(--search-bar);
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 .footer-content {
   height: 170px;
-  margin: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: wrap;
 }
 .logo-container {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 658px;
-  top: 10px;
+  justify-content: center;
 }
 .contact a{
   text-decoration: none;
@@ -1068,17 +1066,19 @@ input[placeholder] {
 }
 .footer-nav {
   display: flex;
-  gap: 30px;
+  gap: 30px;  
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 90px;
-  right: 70px;
+  top: 123px;
+  right: 110px;
 }
 .address{
   font-size: 22px;
   align-items: center;
-  position: absolute;
-  right: 630px;
-  top: 80px;
+  justify-content: center;
+  position: relative;
+  top: -30px;
 }
 .footer-nav a {
   color: var(--discription-color);
@@ -1093,7 +1093,7 @@ input[placeholder] {
   gap: 20px;
   position: absolute;
   float: left;
-  right: 1110px;
+  left: 180px;
 }
 .social-icons a {
   height: 40px;
