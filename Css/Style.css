@@ -1119,8 +1119,10 @@ input[placeholder] {
 
 /* ********************************************************************* */
 /* Products page */
-/* category section */
 
+
+
+/* category section */
 .category {  
   padding-top: 85px;  
   padding-right: 325px;  
@@ -1252,9 +1254,10 @@ ul li:hover ul.dropdown {
   color: var(--text-color);
 }
 
-/* .setion-product-book-card{
 
-} */
+
+
+/* section product card */
 
 .classic_books{
   height: 427px;

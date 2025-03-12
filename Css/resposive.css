@@ -741,3 +741,41 @@
             display: none; 
           }  
       }
+
+      @media screen and (max-width:992px){
+           .products-book-cards{
+            display: grid;
+            width:229px;
+            height: 387px;
+            padding: 18px 8px;
+          }
+          .last{
+            display: none;
+          }
+      }
+      @media screen and (max-width:768px){
+           .products-book-cards{
+            display: grid;
+            width:180px;
+            height: 280px;
+            padding: 18px 0px;
+          }
+          .last{
+            display: none;
+          }
+      }
+      @media screen and (max-width:576px){
+        .classic_books{
+            margin: 0 10px 100px 10px;
+          }
+           .products-book-cards{
+            display: grid;
+            width:180px;
+            height: 280px;
+            padding: 18px 0px;
+          }
+          .last ,
+          .one-last{
+            display: none;
+          }
+      }
