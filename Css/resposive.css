@@ -682,3 +682,62 @@
     }
     
       }
+
+      /* category */
+      @media screen and (max-width:576px) {
+        .category{
+            display: none;
+        }
+      }
+
+
+      /*section frist page  */
+      @media screen and (max-width:992px){
+        .title-section {
+            margin-top: 120px;
+        }
+        .illustration { 
+            width: 394px;
+            height: 386px;
+        }
+
+        .reading-section{  
+            width: 369px;  
+            height: 178px;   
+          }  
+          .group-reading {  
+            width: 369px;  
+            height: 178px;   
+          }  
+      }
+      @media screen and (max-width:768px){
+        .title-section {
+            margin-top: 120px;
+        }
+        .illustration { 
+            width: 325px;
+            height: 316px;
+        }
+
+        .reading-section{  
+            width: 300px;  
+            height: 143px;   
+          }  
+          .group-reading {  
+            width: 300px;  
+            height: 143px;   
+          }  
+      }
+      @media screen and (max-width:576px){
+        .title-section {
+            margin-top: 80px;
+        }
+        .container-image {  
+            display: grid;
+        }
+
+        .reading-section,
+        .group-reading{  
+            display: none; 
+          }  
+      }
