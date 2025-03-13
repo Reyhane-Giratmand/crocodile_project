@@ -1192,3 +1192,125 @@ input[placeholder] {
   opacity: 50%;
   margin: 0 15px 0 0;
 }
+
+
+
+
+/* ********************************************************************* */
+/* weblog page */
+/* weblog section */
+.content-weblog{
+  font-family: Kalameh;
+  position: relative;
+  padding-top:146px ;
+  padding-right:350px ;
+}
+.title-weblog h1{
+  font-size: 30px;
+  color: var(--s-text);
+}
+
+.title-weblog p{
+  font-size: 20px;
+  padding-right: 40px;
+  color:var(--border-clor);
+}
+.title-weblog svg{
+  position: absolute;
+  top:235px;
+  width: 32px;
+  color: var(--border-clor);
+}
+.body-weblog{
+  text-align: justify;
+  padding-bottom: 150px;
+}
+.body-weblog img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--search-bar);
+  width: 810px;
+  height: 446px;
+  border-radius: 10px;
+}
+.body-weblog p{
+  padding-top: 24px;
+  width: 766px;
+  font-size: 20px;
+  color: var(--s-text);
+}
+.body-text{
+  padding-top: 30px;
+}
+.body-text h3{
+  position: absolute;
+  font-size: 20px;
+  color: var(--s-text);
+}
+.body-text p{
+  padding-top:60px;
+  font-size: 20px;
+  color: var(--s-text);
+}
+.offer{
+  width: 398px;
+  height: 766px;
+  border: 1px solid var(--border-clor);
+  float: left;
+  position: absolute;
+  border-radius: 10px;
+  top: 190px;
+  left: 280px;
+}
+.body-offer{
+  position: relative;
+}
+.offer h1{
+  font-size: 24px;
+  color: var(--border-clor);
+  font-weight: 200;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+}
+.offer hr{
+  width: 313px;
+  border: 1px solid var(--border-clor);
+}
+.child-offer{
+  padding: 10px 25px 5px 25px;
+}
+.child-offer img{
+  width: 82px;
+  height: 82px;
+  border-radius: 10px;
+}
+.child-offer p{
+  position: relative;
+  top: -13px;
+  float: left;
+  width: 250px;
+  font-size: 16px;
+  color: var(--s-text);
+}
+.footer-offer p{
+ font-size: 13px;
+ color:var(--discription-color);
+ position: relative;
+ margin-top:-19px;
+ margin-left:-20px;
+ margin-bottom: 0px;
+}
+.footer-offer .clock{
+  position: absolute;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  margin-right:95px;
+}
+.footer-offer svg{
+  width: 17px;
+  height: 17px;
+  color:var(--discription-color);
+}
