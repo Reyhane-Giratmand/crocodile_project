@@ -16,7 +16,10 @@
   --color: #fbfbfb;
   --card-color: #fbfbfb;
   --book-card: #fbfbfb;
+  --book-dis:#858492;
+  --product-card:#f5f5f5;
   --lable-color: #13445a;
+  --social-color:#fbfbfb;
 }
 
 .darkmode {
@@ -36,8 +39,11 @@
   --fitured_color: #35374b;
   --color: #fbfbfb;
   --card-color: #35374b;
-  --book-card: #446878;
+  --book-card: #F1ECE7;
+  --book-dis:#212121;
+  --product-card:#35374b;
   --lable-color: #446878;
+  --social-color:#446878;
 }
 body {
   font-family: kalameh;
@@ -134,7 +140,7 @@ header {
   border: none;
   outline: none;
   background: none;
-  padding: 7px;
+  padding: 10px;
   width: 250px;
  
 }
@@ -146,8 +152,12 @@ header {
   color: var(--text-color);
 }
 
-input[placeholder] {
+ .search-bar input::placeholder{
   font-family: kalameh;
+  font-size: 13px;
+  color: var(--discription-color);
+
+  
   
 }
 
@@ -422,7 +432,7 @@ input[placeholder] {
 .book-title {
   font-size: 22px;
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--fitured_color);
   margin-top: -5px;
   text-align: right;
 }
@@ -433,7 +443,7 @@ input[placeholder] {
   margin-left: -15px;
   height: 60px;
   font-size: 18px;
-  color: var(--discription-color);
+  color: var(--book-dis);
   margin-top: -15px;
 }
 
@@ -441,8 +451,8 @@ input[placeholder] {
   width: 209px;
   height: 53px;
   margin-top: 20px;
-  background-color: var(--text-color);
-  color: var(--nav-color);
+  background-color: var(--lable-color);
+  color: var(--color);
   border: none;
   padding: 10px 14px;
   font-size: 18px;
@@ -536,10 +546,10 @@ input[placeholder] {
   margin-right: 45px;
 }
 
-input[placeholder] {
+input::placeholder {
   font-family: Kalameh;
-  font-size: 14px;
-  color: var(--text-color);
+  font-size: 15px;
+  color: var(--discription-color);
 }
 
 .search-wrapper svg {
@@ -818,7 +828,6 @@ input[placeholder] {
   background-color: var(--card-color);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--boder-color);
   width: 380px;
   height: 353px;
@@ -1097,7 +1106,7 @@ input[placeholder] {
   font-size: 20px;
   border-radius: 10px;
   background-color: var(--borderf-color);
-  color: var(--book-card);
+  color: var(--social-color);
   text-decoration: none;
 }
 .social-icons a:hover {
@@ -1265,7 +1274,7 @@ ul li:hover ul.dropdown {
 }
 
 .product-more div a {
-  color: var(--circle-color);
+  color: var(--borderf-color);
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -1286,7 +1295,8 @@ ul li:hover ul.dropdown {
   height: 100%;
   padding: 18px 8px;
   border-radius: 10px;
-  background-color: var(--search-bar);
+  border: solid 0.5px #f5f5f5;
+  background-color: var(--product-card);
   cursor: pointer;
   margin-top: -2%;
 }
@@ -1304,11 +1314,11 @@ ul li:hover ul.dropdown {
 }
 
 .products-book-cards h3 {
+  color: var(--s-text);
   margin: 1% 15px 0 0;
 }
 
 .products-book-cards p {
-  color: var(--search-text);
-  opacity: 50%;
+  color: var(--discription-color);
   margin: 0 15px 0 0;
 }
