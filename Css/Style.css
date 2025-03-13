@@ -348,6 +348,10 @@ header {
 
 /* book classification section */
 
+.classification{
+  margin-top: 200px;
+}
+
 .title-section {
   display: flex;
   flex-direction: column;
@@ -892,7 +896,7 @@ input::placeholder {
 }
 
 .footer-box .image {
-  margin-right: 170px;
+  margin-right: 160px;
 }
 
 .review-footer {
@@ -1321,4 +1325,9 @@ ul li:hover ul.dropdown {
 .products-book-cards p {
   color: var(--discription-color);
   margin: 0 15px 0 0;
+}
+
+svg{
+  color: var(--boder-color);
+  margin-left: 5px;
 }
