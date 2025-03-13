@@ -416,6 +416,7 @@ input[placeholder] {
   background: var(--search-bar);
   border-radius: 10px;
   margin-bottom: 16px;
+  object-fit: fill;
 }
 
 .book-title {
@@ -838,6 +839,14 @@ input[placeholder] {
   padding-left: 110px;
 }
 
+.new-stars{
+  width: 30px;
+  color: var(--boder-color);
+  fill: var(--boder-color);
+  padding: 0;
+  margin: -3px;
+}
+
 .review-card hr {
   color: var(--boder-color);
   position: relative;
@@ -894,6 +903,10 @@ input[placeholder] {
   font-weight: 300;
   position: relative;
   top: -5px;
+}
+
+.user-review{
+  color: var(--boder-color);
 }
 
 .scroll-button {
