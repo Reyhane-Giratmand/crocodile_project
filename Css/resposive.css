@@ -703,19 +703,20 @@
 
       /*section frist page  */
       @media screen and (max-width:992px){
-        .title-section {
+        .title-section-products {
             margin-top: 120px;
         }
-        .illustration { 
+        .illustration img{
             width: 394px;
             height: 386px;
         }
 
-        .reading-section{  
+        .reading-section img{  
+            margin-bottom: -2px;
             width: 369px;  
             height: 178px;   
           }  
-          .group-reading {  
+          .group-reading img{  
             width: 369px;  
             height: 178px;   
           }  
@@ -724,22 +725,23 @@
         .title-section {
             margin-top: 120px;
         }
-        .illustration { 
+        .illustration img{ 
             width: 325px;
             height: 316px;
         }
 
-        .reading-section{  
+        .reading-section img{  
+            margin-bottom: 5px;
             width: 300px;  
             height: 143px;   
           }  
-          .group-reading {  
+          .group-reading img{  
             width: 300px;  
             height: 143px;   
           }  
       }
       @media screen and (max-width:576px){
-        .title-section {
+        .title-section-products {
             margin-top: 80px;
         }
         .container-image {  
@@ -751,6 +753,7 @@
             display: none; 
           }  
       }
+      
 
       @media screen and (max-width:992px){
            .products-book-cards{

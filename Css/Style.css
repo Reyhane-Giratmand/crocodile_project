@@ -1127,10 +1127,35 @@ input::placeholder {
 /* Products page */
 
 /* category section */
+.title-section-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 165px;
+  width: 100%;
+}
+
+.section-title-products {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--s-text);
+  width: 100%;
+}
+
+.section-description-products {
+  font-size: 18px;
+  color: var(--discription-color);
+  max-width: 700px;
+  margin-top: 3px;
+}
 .category {
+  align-items: center;
   justify-content: center;
   padding-top: 85px;
-  padding-right:125px;
+  padding-right:325px;
 }
 
 .category ul {
@@ -1193,32 +1218,9 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
+
+
 /* section frist page */
-.title-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 45px;
-  width: 100%;
-}
-
-.section-title {
-  font-size: 35px;
-  font-weight: bold;
-  color: var(--s-text);
-  width: 100%;
-}
-
-.section-description {
-  font-size: 18px;
-  color: var(--discription-color);
-  max-width: 700px;
-  margin-top: 3px;
-}
-
 .container-image {
   display: flex;
   justify-content: center;
@@ -1228,34 +1230,37 @@ ul li:hover ul.dropdown {
   gap: 25px;
 }
 
-.illustration {
+.illustration img{
   display: grid;
-  background-color: var(--search-bar);
   border-radius: 10px;
   width: 594px;
   height: 486px;
 }
-.reading-section {
+
+.reading-section img{
   display: grid;
-  background-color: var(--search-bar);
   border-radius: 10px;
   width: 569px;
   height: 228px;
   margin-bottom: 30px;
 }
-.group-reading {
+
+.group-reading img{
   display: grid;
-  background-color: var(--search-bar);
   border-radius: 10px;
   width: 569px;
   height: 228px;
 }
+
 .container-image img[alt] {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-color);
 }
+
+
+
 
 /* section product card */
 .classic_books {
