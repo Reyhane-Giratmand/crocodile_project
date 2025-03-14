@@ -1314,3 +1314,175 @@ input[placeholder] {
   height: 17px;
   color:var(--discription-color);
 }
+
+
+
+
+/* ********************************************************************* */
+/* about page */
+/* style for frist page about */
+.frist-content {
+  display: flex;
+  align-items: center;
+  padding-top: 172px;
+  gap: 150px;
+  padding-right:330px ;
+}
+
+.txt-content {
+  width: 459px;
+  height: 259px;
+}
+
+.txt-content h1 {
+  font-size: 35px;
+  color: var(--s-text);
+  margin-bottom: 50px;
+}
+
+.txt-content p {
+  text-align: justify;
+  font-size: 20px;
+  color: var(--discription-color);
+  margin-bottom: 20px;
+}
+
+.image-about-page {
+  width: 624px;
+  height: 496px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  padding: 10px;
+  align-items: center;
+  background-color: var(--search-bar);
+  border-radius: 10px;
+}
+
+.image-about-page img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* style for second page about */
+.title-section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 165px;
+}
+
+.section-title-about{
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--s-text);
+}
+
+.section-description-about {
+  font-size: 18px;
+  color: var(--discription-color);
+  width: 700px;
+  margin-top: 3px;
+}
+
+.card-container {
+  font-family: Kalameh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 87px;
+  margin-bottom: 100px;
+}
+.box-card{
+  border-radius: 10px;
+  border: 1px solid var(--boder-color);
+  text-align: center;
+  background:none;
+  height: 547px;
+  width: 387px;
+}
+
+.box-card img {
+  width: 148px;
+  height: 148px;
+  background-color: var(--search-bar);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  margin-top: 45px;
+}
+.box-h2{
+  color: var(--text-color);
+  font-size: 44px;
+  margin-bottom: -10px;
+}
+.box-title {
+  font-size: 20px;
+  color: var(--discription-color);
+  margin-bottom: 34px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.box-description {
+  font-size: 18px;
+  color: var(--border-clor);
+  padding-left :25px ;
+  padding-right :25px ;
+}
+
+
+
+
+/* third page about section strats */
+.about-container {
+  font-family: Kalameh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 114px;
+  margin-top: 87px;
+  margin-bottom: 194px;
+}
+.about-card{
+  text-align: center;
+  background:none;
+}
+.about-card img {
+  width: 80px;
+  height: 80px;
+  background-color: var(--search-bar);
+  border-radius: 50%;
+}
+.about-h2{
+  color:#5D5A88;
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+.about-title {
+  font-size: 14px;
+  color: var(--discription-color);
+  margin-bottom: 34px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 16px;
+  color: var(--discription-color);
+  text-align: center;
+}
