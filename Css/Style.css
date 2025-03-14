@@ -1324,6 +1324,7 @@ input[placeholder] {
 .frist-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 172px;
   gap: 140px;
   padding-right:130px ;
