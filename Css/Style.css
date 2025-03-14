@@ -1224,6 +1224,7 @@ input[placeholder] {
 .body-weblog{
   text-align: justify;
   padding-bottom: 150px;
+  padding-top:41px;
 }
 .body-weblog img{
   display: flex;
