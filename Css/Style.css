@@ -1325,8 +1325,9 @@ input[placeholder] {
   display: flex;
   align-items: center;
   padding-top: 172px;
-  gap: 150px;
-  padding-right:330px ;
+  gap: 140px;
+  padding-right:130px ;
+  padding-left:130px;
 }
 
 .txt-content {
@@ -1342,7 +1343,7 @@ input[placeholder] {
 
 .txt-content p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--discription-color);
   margin-bottom: 20px;
 }
@@ -1469,7 +1470,7 @@ input[placeholder] {
   border-radius: 50%;
 }
 .about-h2{
-  color:#5D5A88;
+  color:var(--text-color);
   font-size: 24px;
   margin-bottom: -10px;
 }
