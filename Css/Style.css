@@ -1426,7 +1426,7 @@ svg{
 .offer{
   width: 398px;
   height: 766px;
-  border: 1px solid var(--border-clor);
+  border: 0.5px solid var(--borderf-color);
   float: left;
   position: absolute;
   border-radius: 10px;
@@ -1438,7 +1438,7 @@ svg{
 }
 .offer h1{
   font-size: 24px;
-  color: var(--border-clor);
+  color: var(--borderf-color);
   font-weight: 200;
   text-align: center;
   padding-top: 40px;
@@ -1447,7 +1447,7 @@ svg{
 }
 .offer hr{
   width: 313px;
-  border: 1px solid var(--border-clor);
+  border: 0.5px solid var(--discription-color);
 }
 .child-offer{
   padding: 10px 25px 5px 25px;
