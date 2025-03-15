@@ -748,7 +748,10 @@
         .container-image {  
             display: grid;
         }
-
+        .illustration img{ 
+          width: 425px;
+          height: 416px;
+      }
         .reading-section,
         .group-reading{  
             display: none; 
