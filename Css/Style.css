@@ -46,6 +46,12 @@
   --social-color:#446878;
 }
 body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+
   font-family: kalameh;
   direction: rtl;
   margin: 0;
@@ -145,6 +151,14 @@ header {
  
 }
 
+a{
+  text-decoration: none;
+}
+
+img{
+  color: var(--s-text);
+}
+
 .search-bar button {
   border: none;
   background: none;
@@ -159,6 +173,10 @@ header {
 
   
   
+}
+
+input[type=text]{
+  color: var(--s-text);
 }
 
 .icons .box-icon {
@@ -690,7 +708,7 @@ input::placeholder {
 
 .about-boomrang p {
   color: var(--discription-color);
-  width: 80%;
+  width: 90%;
   text-align: justify;
   margin-bottom: 100px;
 }
@@ -707,6 +725,7 @@ input::placeholder {
   justify-content: center;
   text-align: center;
   margin-right: 5%;
+  color: var(--s-text);
 }
 
 .about-boomrang img {
@@ -1329,7 +1348,7 @@ ul li:hover ul.dropdown {
 
 .products-book-cards h3 {
   color: var(--s-text);
-  margin: 1% 15px 0 0;
+  margin: 5% 15px 0 0;
 }
 
 .products-book-cards p {
@@ -1363,13 +1382,13 @@ svg{
 .title-weblog p{
   font-size: 20px;
   padding-right: 40px;
-  color:var(--border-clor);
+  color:var(--borderf-color);
 }
 .title-weblog svg{
   position: absolute;
   top:235px;
   width: 32px;
-  color: var(--border-clor);
+  color: var(--borderf-color);
 }
 .body-weblog{
   text-align: justify;
@@ -1593,7 +1612,7 @@ svg{
 
 .box-description {
   font-size: 18px;
-  color: var(--border-clor);
+  color: var(--borderf-color);
   padding-left :25px ;
   padding-right :25px ;
 }
