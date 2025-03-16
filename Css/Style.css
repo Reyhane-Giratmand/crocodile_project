@@ -1397,7 +1397,7 @@ svg{
 }
 .title-weblog svg{
   position: absolute;
-  top:249px;
+  top:225px;
   width: 32px;
   color: var(--borderf-color);
 }
@@ -1441,8 +1441,8 @@ svg{
   float: left;
   border-radius: 10px;
   position: sticky;
-  top: 120px;
   margin-bottom: 20px;
+  margin-top: -90px;
 }
 .body-offer{
   position: relative;
