@@ -295,6 +295,11 @@
 }
 
 @media (max-width: 409px){
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
   .main-content {
     display: none;
     padding: 72px 0px 0px;
