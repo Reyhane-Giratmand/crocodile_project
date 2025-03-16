@@ -301,9 +301,12 @@
     transition: none !important;
   }
   .main-content {
-    display: none;
-    padding: 72px 0px 0px;
-    margin: 10px 0px;
+    padding: 0px 0px 0px;
+    margin-top: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .text-content h1 {
     font-size: 30px;
@@ -898,6 +901,11 @@
           }
       }
       @media screen and (max-width:409px){
+        [data-aos] {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
         .product-more h2{
           font-size: 18px;
         }
@@ -1030,6 +1038,11 @@
     }
 
     @media screen and (max-width:409px) {
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
       .content-weblog {
         padding-right: 5px;
         margin: 0 auto;
@@ -1172,6 +1185,11 @@
             }   
       }
       @media screen and (max-width:409px) {
+        [data-aos] {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
         .frist-content {
           padding-top:20px;
         }
