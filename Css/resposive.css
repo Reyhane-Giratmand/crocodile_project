@@ -296,6 +296,7 @@
 
 @media (max-width: 409px){
   .main-content {
+    display: none;
     padding: 72px 0px 0px;
     margin: 10px 0px;
   }
