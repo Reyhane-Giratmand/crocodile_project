@@ -291,6 +291,9 @@ input[type=text]{
   display: none;
 }
 
+
+
+
 /* style for frist page */
 .main-content {
   display: flex;
@@ -688,6 +691,8 @@ input::placeholder {
   text-align: right;
 }
 
+
+
 /* about boomrang */
 .about-boomrang-section {
   display: flex;
@@ -818,7 +823,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 0px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -829,7 +834,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   position: relative;
-  width: 1200;
   font-weight: 400;
 }
 
@@ -994,7 +998,7 @@ input::placeholder {
   direction: rtl;
 }
 .accordion {
-  max-width: 967px;
+  max-width: 767px;
 }
 .accordion-content .header .bx {
   position: relative;
