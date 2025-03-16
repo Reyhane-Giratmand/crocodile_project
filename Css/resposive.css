@@ -319,14 +319,14 @@
   }
   
   .text-content-res h1 {
-    font-size: 35px;
+    font-size: 30px;
     color: var(--s-text);
     margin-bottom: 20px;
   }
   
   .text-content-res p {
-    text-align: justify;
-    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
     color: var(--discription-color);
     margin-bottom: 20px;
     width: 350px;
@@ -346,9 +346,6 @@
     font-size: 20px;
     border-radius: 10px;
     transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom:50px ;
   }
   
