@@ -694,6 +694,9 @@
     
       }
 
+
+
+
       /* category */
       @media screen and (max-width:576px) {
         .category{
@@ -758,7 +761,6 @@
           }  
       }
       
-
       @media screen and (max-width:992px){
            .products-book-cards{
             display: grid;
@@ -808,6 +810,61 @@
             display: none;
           }
       }
+      @media screen and (max-width:409px){
+        .product-more h2{
+          font-size: 18px;
+        }
+
+        .products-book-cards{
+          display: grid;
+          width:140px;
+          height: 240px;
+          padding: 18px 0px;
+          font-size: 150%;
+          margin-top: 0;
+        }
+        .products-book-cards p{
+          font-size: 10px;
+        }
+        .illustration img{
+          width: 344px;
+          height: 336px;
+      }
+        .last ,
+        .one-last{
+          display: none;
+        }
+      }
+
+      @media screen and (max-width:375px){
+        .product-more h2{
+          font-size: 16px;
+        }
+        .product-more p{
+          font-size: 12px;
+        }
+
+        .products-book-cards{
+          display: grid;
+          width:130px;
+          height: 220px;
+          padding: 18px 0px;
+          font-size: 150%;
+          margin-top: 0;
+        }
+        .products-book-cards p{
+          font-size: 10px;
+        }
+        .last ,
+        .one-last{
+          display: none;
+        }
+      }
+
+
+
+
+
 
 
     /* resposive weblog page */
