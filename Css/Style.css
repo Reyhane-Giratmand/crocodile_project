@@ -295,6 +295,9 @@ input[type=text]{
 
 
 /* style for frist page */
+.main-content-res{
+  display: none;
+}
 .main-content {
   display: flex;
   flex-direction: row;

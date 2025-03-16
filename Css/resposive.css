@@ -300,22 +300,67 @@
     transform: none !important;
     transition: none !important;
   }
-  .main-content {
-    padding: 0px 0px 0px;
-    margin-top: 50px;
-    width: 400px;
+  .main-content{
+    display: none;
+  }
+
+
+  .main-content-res {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 72px 50px 50px;
+  }
+  .text-content-res {
+    flex: 1;
+    max-width: 542px;
+    max-height: 259px;
+    text-align: center;
+  }
+  
+  .text-content-res h1 {
+    font-size: 35px;
+    color: var(--s-text);
+    margin-bottom: 20px;
+  }
+  
+  .text-content-res p {
+    text-align: justify;
+    font-size: 20px;
+    color: var(--discription-color);
+    margin-bottom: 20px;
+    width: 350px;
+  }
+  
+  .book-exchange-btn-res {
+    margin-top: 70px;
+    width: 178px;
+    height: 58px;
+    padding: 14px 14px 14px;
+    font-family: kalameh;
+    font-weight: 600;
+    background-color: #970747;
+    color: #fbfbfb;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom:50px ;
   }
-  .text-content h1 {
-    font-size: 30px;
+  
+  .book-exchange-btn-res:hover {
+    background-color: #780c28;
   }
-  .text-content p {
-    font-size: 16px;
-  }
+
+
+
+
   .classification{
-    margin-top: -190px;
+    margin-top: -10px;
   }
   .weblog-card-label{
     font-size: 12px;
