@@ -880,6 +880,34 @@
       }
     }
 
+    @media screen and (max-width:375px) {
+      .content-weblog {
+        padding-right: 5px;
+        margin: 0 auto;
+        padding-top:47px;
+      }
+      .title-weblog h1{
+        font-size: 24px;
+      }
+      .title-weblog svg{
+        top:130px;
+      }
+    }
+
+    @media screen and (max-width:320px) {
+      .content-weblog {
+        padding-right: 5px;
+        margin: 0 auto;
+        padding-top:20px;
+      }
+      .title-weblog h1{
+        font-size: 22px;
+      }
+      .title-weblog svg{
+        top:97px;
+      }
+    }
+
 
 
 
