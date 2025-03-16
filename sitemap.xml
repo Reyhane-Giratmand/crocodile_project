@@ -3,7 +3,7 @@
   
   <!-- صفحه اصلی -->
   <url>
-    <loc>https://www.yoursite.com/Index.html</loc>
+    <loc>https://boomrang-book.vercel.app/Index.html</loc>
     <lastmod>2025-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
@@ -11,7 +11,7 @@
 
   <!-- صفحه محصولات -->
   <url>
-    <loc>https://www.yoursite.com/products</loc>
+    <loc>https://boomrang-book.vercel.app/products.html</loc>
     <lastmod>2025-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
@@ -19,7 +19,7 @@
 
   <!-- صفحه وبلاگ -->
   <url>
-    <loc>https://www.yoursite.com/blog</loc>
+    <loc>https://boomrang-book.vercel.app/blog.html</loc>
     <lastmod>2025-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -27,7 +27,7 @@
 
   <!-- صفحه درباره ما -->
   <url>
-    <loc>https://www.yoursite.com/about</loc>
+    <loc>https://boomrang-book.vercel.app/about.html</loc>
     <lastmod>2025-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.60</priority>
