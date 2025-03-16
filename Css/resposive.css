@@ -811,6 +811,11 @@
 
 
     /* resposive weblog page */
+    @media screen and (max-width:1840px) {
+      .title-weblog svg{
+        top:249px;
+      }
+    }
     @media screen and (max-width:1200px) {
       .content-weblog {
         width: 80%;
