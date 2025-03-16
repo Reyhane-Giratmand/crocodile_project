@@ -1649,7 +1649,7 @@ svg{
   border-radius: 50%;
 }
 .about-h2{
-  color:#5D5A88;
+  color:var(--text-color);
   font-size: 24px;
   margin-bottom: -10px;
 }
