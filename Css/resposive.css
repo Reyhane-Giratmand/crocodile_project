@@ -379,22 +379,6 @@
   .scroll-button {
     display: none;
   }
-  .review-card hr {
-    width: 300px;
-  }
-  .footer-box .image {
-    margin-right: 100px;
-  }
-  .footer-box img {
-    font-size: 22px;
-  }
-  
-  .review-icon {
-    font-size: 12px;
-  }
-  .review-text {
-    font-size: 14px;
-  }
   .accordion {
     max-width: 400px;
   }
