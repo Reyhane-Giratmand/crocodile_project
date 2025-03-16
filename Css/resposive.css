@@ -922,9 +922,8 @@
               padding-top: 172px;
               gap: 60px;
               padding-right:60px ;
-              padding-left:0px;
             }
-            .image-about-page {
+            .image-about-page img{
               width: 524px;
               height: 396px;
               padding-right: 0px;
@@ -941,9 +940,8 @@
               padding-top: 172px;
               gap: 30px;
               padding-right:30px ;
-              padding-left:0px;
             }
-            .image-about-page {
+            .image-about-page img{
               width: 424px;
               height: 296px;
               padding-right: 0px;
@@ -975,10 +973,9 @@
           .frist-content {
               padding-top: 172px;
               padding-right:160px ;
-              padding-left:0px;
               gap: 0px;
             }
-            .image-about-page {
+            .image-about-page img{
               display: none;
             }
             .card-container {
@@ -998,7 +995,6 @@
           .frist-content {
               padding-top: 100px;
               padding-right:60px ;
-              padding-left:0px;
               gap: 0px;
             }
             .title-section-about {
@@ -1030,4 +1026,19 @@
             .about-description {
               font-size: 12px;
             }   
+      }
+      @media screen and (max-width:409px) {
+        .frist-content {
+          padding-top:20px;
+        }
+        .txt-content{
+          margin-right: -40px;
+          padding-bottom: 80px;
+        }
+        .section-description-about {
+          width: 400px;
+        }
+        .title-section-about p{
+          width: 350px;
+        }
       }
