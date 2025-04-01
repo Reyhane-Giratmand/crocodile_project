@@ -449,8 +449,8 @@ input[type=text]{
 }
 
 .book-card img {
-  width: 255px;
-  height: 310px;
+  width: 230px;
+  height: 290px;
   background: var(--search-bar);
   border-radius: 10px;
   margin-bottom: 16px;

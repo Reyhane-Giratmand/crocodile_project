@@ -288,7 +288,7 @@
         max-width: 800px;
       }
       .book-card {
-        width: 300px; 
+        width: 280px; 
       }
     
 
@@ -357,6 +357,9 @@
   .weblog-card-label{
     font-size: 12px;
   }
+  .weblog-card-detail hr{
+    display: none;
+  }
   .weblog-card-detail p{
     font-size: 16px;
   }
@@ -390,17 +393,6 @@
     padding-right: 30px;
     padding-left: 30px;
   }
-  .stars {
-    margin-bottom: 0px;
-    padding-top: 10px;
-
-  }
-  .review-text {
-    text-align: justify;
-    padding: 0px 20px 0px 20px;
-    font-size: 12px;
-  }
-
 }
 
 
@@ -425,10 +417,20 @@
   }
   
   .book-card img {
-    width: 195px;
-    height: 239px;
+    width: 180px;
+    height: 230px;
     border-radius: 10px;
     margin-bottom: 16px;
+  }
+  .stars {
+    margin-bottom: 0px;
+    padding-top: 10px;
+
+  }
+  .review-text {
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    font-size: 12px;
   }
 }
 
