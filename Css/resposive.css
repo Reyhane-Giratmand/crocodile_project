@@ -390,6 +390,16 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+  .stars {
+    margin-bottom: 0px;
+    padding-top: 10px;
+
+  }
+  .review-text {
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    font-size: 12px;
+  }
 
 }
 
